@@ -10,8 +10,6 @@ namespace WebApplication1.Database_Layer
         private readonly string _connectionString;
         private SqlConnection _connection;
 
-
-
         public DBconnect()
         {
             //_connectionString = string.Format("Data Source=ito-test020; " +
