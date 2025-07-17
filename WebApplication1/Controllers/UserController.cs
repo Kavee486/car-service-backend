@@ -22,7 +22,7 @@ namespace WebApplication1.Controllers
         // GET: Test
 
         [HttpGet]
-        public ActionResult User()
+        public new ActionResult User()
         {
             var result = _User.User();
             return Json(result, JsonRequestBehavior.AllowGet);

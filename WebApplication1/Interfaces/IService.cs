@@ -7,11 +7,9 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Interfaces
 {
-    public interface IVehicle
+    public interface IService
     {
-
-       Response getAllVehicles();
-       Response GetVehicleById(string id);
-       Response GetVehicleByuserId(string id);
+        Response GetAllServices();
+        Response GetServiceById(string id);
     }
 }

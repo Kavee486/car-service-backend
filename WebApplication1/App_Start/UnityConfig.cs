@@ -16,6 +16,7 @@ namespace WebApplication1
             container.RegisterType<ITest, DATest>();
             container.RegisterType<IUser, DAUser>();
             container.RegisterType<IVehicle, DAVehicle>();
+            container.RegisterType<IService, DAService>();
 
             // Set the dependency resolver for MVC
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));

@@ -28,6 +28,21 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpGet]
+        public ActionResult GetVehicleById(string id)
+        {
+            var result = _vehicle.GetVehicleById(id);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpGet]
+        public ActionResult GetVehicleByuserId(string id)
+        {
+            var result = _vehicle.GetVehicleByuserId(id);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
 
         // GET: Vehicle
         public ActionResult Index()
