@@ -59,7 +59,7 @@ namespace WebApplication1.DataAccess
                         };
 
 
-                        AppointmentList.Add(Appointment);
+                        AppointmentList.Add(appointment);
                     }
                 }
             }
@@ -114,7 +114,7 @@ namespace WebApplication1.DataAccess
                         };
 
 
-                        AppointmentList.Add(Appointment);
+                        AppointmentList.Add(appointment);
                     }
                 }
             }
@@ -169,7 +169,7 @@ namespace WebApplication1.DataAccess
                         };
 
 
-                        AppointmentList.Add(Appointment);
+                        AppointmentList.Add(appointment);
                     }
                 }
             }
