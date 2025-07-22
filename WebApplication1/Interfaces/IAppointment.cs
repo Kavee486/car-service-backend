@@ -7,10 +7,11 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Interfaces
 {
-    public interface IService
+    public interface IAppointment
     {
-        Response GetAllServices();
-        Response GetServiceById(string id);
-       
+        Response GetAllAppointments();
+        Response GetAppointmentsById(string id);
+        Response GetAvailableTimeSlots(string date, string serviceId);
+
     }
 }

@@ -13,9 +13,7 @@ namespace WebApplication1.DataAccess
 {
     public class DAService : IService
     {
-        public object serviceList;
 
-        public object ServiceList { get; private set; }
 
         public Response GetAllServices()
 
@@ -28,9 +26,9 @@ namespace WebApplication1.DataAccess
                                 "cost," +
                                 "description, " +
                                 "name, " +
-                                "CategoryId, " +
+                                "category_id, " +
                                 "slots, " +
-                                "time_period, " +
+                                "time_period " +
 
                             "FROM " +
                                 "services ";
@@ -48,7 +46,7 @@ namespace WebApplication1.DataAccess
                             S_Cost = reader["cost"].ToString(),
                             S_Description = reader["description"].ToString(),
                             S_Name = reader["name"].ToString(),
-                            S_CategoryId = reader["CategoryId"].ToString(),
+                            S_CategoryId = reader["category_id"].ToString(),
                             S_Slots = reader["slots"].ToString(),
                             S_TimePeriod = reader["time_period"].ToString()
                         };
@@ -59,7 +57,7 @@ namespace WebApplication1.DataAccess
                 }
             }
             res.StatusCode = 200;
-            res.ResultSet = serviceList;
+            res.ResultSet = ServiceList;
             return res;
 
 
@@ -70,21 +68,20 @@ namespace WebApplication1.DataAccess
 
 
             Response res = new Response();
-            List<GetServiceModal> VehicleList = new List<GetServiceModal>();
+            List<GetServiceModal> ServiceList = new List<GetServiceModal>();
 
             string Query = "SELECT " +
                                     "id, " +
                                     "cost," +
                                     "description, " +
                                     "name, " +
-                                    "CategoryId, " +
+                                    "category_id, " +
                                     "slots, " +
-                                    "time_period, " +
-
-                               "FROM " +
-                                "service " +
+                                    "time_period " +
+                            "FROM " +
+                                     "services " +
                             "WHERE " +
-                                "id = '" + id + "'";
+                                     "id = '" + id + "'";
             using (var DBconnect = new DBconnect())
             {
                 using (SqlDataReader reader = DBconnect.ReadTable(Query))
@@ -98,7 +95,7 @@ namespace WebApplication1.DataAccess
                             S_Cost = reader["cost"].ToString(),
                             S_Description = reader["description"].ToString(),
                             S_Name = reader["name"].ToString(),
-                            S_CategoryId = reader["CategoryId"].ToString(),
+                            S_CategoryId = reader["category_id"].ToString(),
                             S_Slots = reader["slots"].ToString(),
                             S_TimePeriod = reader["time_period"].ToString()
                         };
@@ -107,8 +104,53 @@ namespace WebApplication1.DataAccess
                 }
             }
             res.StatusCode = 200;
-            res.ResultSet = VehicleList;
+            res.ResultSet = ServiceList;
             return res;
+        }
+        public Response GetServiceBycategoryId(string id)
+        {
+            Response res = new Response();
+            List<GetServiceModal> ServiceList = new List<GetServiceModal>();
+
+            string Query = "SELECT " +
+                                    "id, " +
+                                    "cost," +
+                                    "description, " +
+                                    "name, " +
+                                    "category_id, " +
+                                    "slots, " +
+                                    "time_period " +
+                            "FROM " +
+                                     "services " +
+                            "WHERE " +
+                                     "category_id = '" + id + "'";
+
+            using (var DBconnect = new DBconnect())
+            {
+                using (SqlDataReader reader = DBconnect.ReadTable(Query))
+                {
+                    while (reader.Read())
+                    {
+
+                        GetServiceModal service = new GetServiceModal
+                        {
+                            S_ID = reader["id"].ToString(),
+                            S_Cost = reader["cost"].ToString(),
+                            S_Description = reader["description"].ToString(),
+                            S_Name = reader["name"].ToString(),
+                            S_CategoryId = reader["category_id"].ToString(),
+                            S_Slots = reader["slots"].ToString(),
+                            S_TimePeriod = reader["time_period"].ToString()
+                        };
+                        ServiceList.Add(service);
+                        
+                    }
+                }
+            }
+            res.StatusCode = 200;
+            res.ResultSet = ServiceList;
+            return res;
+
         }
     }
 } 

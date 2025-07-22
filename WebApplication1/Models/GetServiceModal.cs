@@ -16,6 +16,5 @@ namespace WebApplication1.Models
         public string S_Slots { get; set; }
         public string S_TimePeriod { get; set; }
 
-
     }
 }

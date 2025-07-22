@@ -7,10 +7,9 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Interfaces
 {
-    public interface IService
+    public interface IServiceCategory
     {
-        Response GetAllServices();
-        Response GetServiceById(string id);
-       
+        Response GetAllServiceCategories();
+        Response GetAllServiceCategoriesById(string id);
     }
 }

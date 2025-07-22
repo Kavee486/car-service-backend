@@ -12,11 +12,14 @@ namespace WebApplication1
         {
             var container = new UnityContainer();
 
-            // Register your interfaces and implementations
+            // Register your interfaces and implementations 
             container.RegisterType<ITest, DATest>();
             container.RegisterType<IUser, DAUser>();
             container.RegisterType<IVehicle, DAVehicle>();
             container.RegisterType<IService, DAService>();
+            container.RegisterType<IServiceCategory, DAServiceCategory>();
+            container.RegisterType<IAppointment, DAAppointment>();
+            
 
             // Set the dependency resolver for MVC
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));

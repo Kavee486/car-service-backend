@@ -158,12 +158,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Controllers\AppointmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ServiceCategoryController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VehicleController.cs" />
+    <Compile Include="DataAccess\DAAppointment.cs" />
     <Compile Include="DataAccess\DAService.cs" />
+    <Compile Include="DataAccess\DAServiceCategory.cs" />
     <Compile Include="DataAccess\DATest.cs" />
     <Compile Include="DataAccess\DAUser.cs" />
     <Compile Include="DataAccess\DAVehicle.cs" />
@@ -171,10 +175,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IAppointment.cs" />
     <Compile Include="Interfaces\IService.cs" />
+    <Compile Include="Interfaces\IServiceCategory.cs" />
     <Compile Include="Interfaces\ITest.cs" />
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
+    <Compile Include="Models\GetAppointmentModal.cs" />
+    <Compile Include="Models\GetServiceCategoryModal.cs" />
     <Compile Include="Models\GetServiceModal.cs" />
     <Compile Include="Models\GetVehicleModal.cs" />
     <Compile Include="Models\Response.cs" />
@@ -236,6 +244,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="BusinessLayer\" />
+    <Folder Include="Views\Appointment\" />
+    <Folder Include="Views\ServiceCategory\" />
     <Folder Include="Views\Service\" />
     <Folder Include="Views\Test1\" />
     <Folder Include="Views\Test\" />
