@@ -6,11 +6,54 @@ using System.Web;
 using WebApplication1.Interfaces;
 using WebApplication1.Models;
 using WebApplication1.Database_Layer;
+using biZTrack.Static;
 
 namespace WebApplication1.DataAccess
 {
     public class DAVehicle : IVehicle
     {
+        public Response AddVehicalDetails(GetVehicleModal addVehicle)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string Query = "INSERT INTO vehicles " +
+                                          "(color," +
+                                           "license_plate," +
+                                           "make," +
+                                           "model," +
+                                           "user_id," +
+                                           "type," +
+                                           "vehicle_no) " +
+                               "VALUES('" + addVehicle.V_Color + "'," +
+                                       "'" + addVehicle.V_LicensePlate + "'," +
+                                       "'" + addVehicle.V_Make + "'," +
+                                       "'" + addVehicle.V_Model + "'," +
+                                       "'" + addVehicle.V_UserID + "'," +
+                                       "'" + addVehicle.V_Type + "'," +
+                                       "'" + addVehicle.V_No + "')";
+
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(Query))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
         public Response getAllVehicles()
         {
             Response res = new Response();

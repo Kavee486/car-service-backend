@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -32,6 +33,14 @@ namespace WebApplication1.Controllers
         public ActionResult GetServiceById(string id)
         {
             var result = _service.GetServiceById(id);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpPost]
+        public ActionResult AddServiceDetails(GetServiceModal AddService)
+        {
+            var result = _service.AddServiceDetails(AddService);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }

@@ -9,6 +9,7 @@ namespace WebApplication1.Interfaces
 {
     public interface IServiceCategory
     {
+        Response AddServiceCategoryDetails(GetServiceCategoryModal addServiceCategory);
         Response GetAllServiceCategories();
         Response GetAllServiceCategoriesById(string id);
     }

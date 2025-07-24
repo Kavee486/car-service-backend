@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -40,6 +41,14 @@ namespace WebApplication1.Controllers
         public ActionResult GetVehicleByuserId(string id)
         {
             var result = _vehicle.GetVehicleByuserId(id);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpPost]
+        public ActionResult AddVehicalDetails(GetVehicleModal AddVehicle)
+        {
+            var result = _vehicle.AddVehicalDetails(AddVehicle);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using biZTrack.Static;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -179,6 +180,53 @@ namespace WebApplication1.DataAccess
 
 
         }
+
+        public Response AddAppointmentDetails(GetAppointmentModal addAppointment)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string Query = "INSERT INTO appointments " +
+                                          "(date," +
+                                           "time," +
+                                           "technician_id," +
+                                           "vehicle_id," +
+                                           "approved," +
+                                           "end_time," +
+                                           "start_time," +
+                                           "service_id," +
+                                           "user_id) " +
+                               "VALUES('" + addAppointment.A_Date + "'," +
+                                       "'" + addAppointment.A_Time + "'," +
+                                       "'" + addAppointment.A_TechnicianId + "'," +
+                                       "'" + addAppointment.A_VehicleId + "'," +
+                                       "'" + addAppointment.A_Approved + "'," +
+                                       "'" + addAppointment.A_EndTime + "'," +
+                                       "'" + addAppointment.A_StartTime + "'," +
+                                       "'" + addAppointment.A_ServiceId + "'," +
+                                       "'" + addAppointment.A_UserId + "')";
+
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(Query))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
 
 
     }

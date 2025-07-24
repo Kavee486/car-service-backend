@@ -1,4 +1,5 @@
-﻿using System;
+﻿using biZTrack.Static;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -152,5 +153,47 @@ namespace WebApplication1.DataAccess
             return res;
 
         }
+
+        public Response AddServiceDetails(GetServiceModal addService)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string Query = "INSERT INTO services " +
+                                          "(cost," +
+                                           "description," +
+                                           "name," +
+                                           "category_id," +
+                                           "slots," +
+                                           "time_period) " +
+                               "VALUES('" + addService.S_Cost + "'," +
+                                       "'" + addService.S_Description + "'," +
+                                       "'" + addService.S_Name + "'," +
+                                       "'" + addService.S_CategoryId + "'," +
+                                       "'" + addService.S_Slots + "'," +
+                                       "'" + addService.S_TimePeriod + "')";
+
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(Query))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
+
     }
 } 

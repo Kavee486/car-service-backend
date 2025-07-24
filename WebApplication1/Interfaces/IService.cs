@@ -9,8 +9,9 @@ namespace WebApplication1.Interfaces
 {
     public interface IService
     {
+        Response AddServiceDetails(GetServiceModal addService);
         Response GetAllServices();
         Response GetServiceById(string id);
-       
+        
     }
 }

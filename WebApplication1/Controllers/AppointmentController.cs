@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
     public class AppointmentController : Controller
     {
         private readonly IAppointment _Appointment;
+        private object _servicecategory;
 
         //DATest DATest = new DATest();
 
@@ -43,7 +46,13 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult AddAppointmentDetails(GetAppointmentModal AddAppointment)
+        {
+            var result = _Appointment.AddAppointmentDetails(AddAppointment);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
+        }
 
         // GET: Appointment
         public ActionResult Index()

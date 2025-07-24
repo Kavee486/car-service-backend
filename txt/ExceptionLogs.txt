@@ -1,0 +1,4 @@
+01/01/0001 00:00:00 ~ AddAppointmentDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_appointments_technician". The conflict occurred in database "carservice", table "dbo.technician", column 'id'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddAppointmentDetails ~ Conversion failed when converting date and/or time from character string.;
+01/01/0001 00:00:00 ~ AddAppointmentDetails ~ Conversion failed when converting date and/or time from character string.;

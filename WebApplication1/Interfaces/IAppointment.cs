@@ -12,6 +12,6 @@ namespace WebApplication1.Interfaces
         Response GetAllAppointments();
         Response GetAppointmentsById(string id);
         Response GetAvailableTimeSlots(string date, string serviceId);
-
+        Response AddAppointmentDetails(GetAppointmentModal addAppointment);
     }
 }

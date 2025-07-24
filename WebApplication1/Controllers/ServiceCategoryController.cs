@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -32,6 +34,15 @@ namespace WebApplication1.Controllers
         public ActionResult GetAllServiceCategoriesById(string id)
         {
             var result = _servicecategory.GetAllServiceCategoriesById(id);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpPost]
+        public ActionResult AddServiceCategoryDetails(GetServiceCategoryModal AddServiceCategory)
+        {
+            var result = _servicecategory.AddServiceCategoryDetails(AddServiceCategory);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }

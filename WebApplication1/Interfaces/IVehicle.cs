@@ -9,8 +9,8 @@ namespace WebApplication1.Interfaces
 {
     public interface IVehicle
     {
-
-       Response getAllVehicles();
+        Response AddVehicalDetails(GetVehicleModal addVehicle);
+        Response getAllVehicles();
        Response GetVehicleById(string id);
        Response GetVehicleByuserId(string id);
     }
