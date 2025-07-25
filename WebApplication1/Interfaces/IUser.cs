@@ -9,6 +9,7 @@ namespace WebApplication1.Interfaces
 {
     public interface IUser
     {
-        Response User();
+        Response getAllUsers();
+        
     }
 }

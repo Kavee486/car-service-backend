@@ -14,7 +14,7 @@ namespace WebApplication1.DataAccess
         public Response TestUser()
         {
             Response res = new Response();
-            List<UserModel> userList = new List<UserModel>();
+            List<GetUserModel> userList = new List<GetUserModel>();
 
             string Query = "SELECT " +
                                 "User_id, " +
@@ -34,7 +34,7 @@ namespace WebApplication1.DataAccess
                     while (reader.Read())
                     {
 
-                        UserModel user = new UserModel();
+                        GetUserModel user = new GetUserModel();
 
 
                         user.UserId = reader["User_id"].ToString();

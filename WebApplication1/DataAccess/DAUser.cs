@@ -11,21 +11,19 @@ namespace WebApplication1.DataAccess
 {
     public class DAUser : IUser
     {
-        public Response User()
+        public Response getAllUsers()
         {
             Response res = new Response();
-            List<UserModel> userList = new List<UserModel>();
+            List<GetUserModel> UserList = new List<GetUserModel>();
 
             string Query = "SELECT " +
-                                "User_id, " +
-                                "type," +
-                                "phone_no, " +
-                                "Email, " +
-                                "user_name, " +
-                                "company_id, " +
-                                "(select company_name from assets_company_master where id = company_id) company_name " +
+                                "UserID, " +
+                                "UserName," +
+                                "PasswordHash, " +
+                                "RoleID " +
+
                             "FROM " +
-                                "assets_user_master ";
+                                "Users ";
 
             using (var DBconnect = new DBconnect())
             {
@@ -34,24 +32,46 @@ namespace WebApplication1.DataAccess
                     while (reader.Read())
                     {
 
-                        UserModel user = new UserModel();
+                        GetUserModel user = new GetUserModel
+                        {
+                            U_UserID = reader["UserID"].ToString(),
+                            U_UserName = reader["UserName"].ToString(),
+                            U_PasswordHash = reader["PasswordHash"].ToString(),
+                            U_RoleID = reader["RoleID"].ToString()
+                        };
 
 
-                        user.UserId = reader["User_id"].ToString();
-                        user.Type = reader["type"].ToString();
-                        user.PhoneNo = reader["phone_no"].ToString();
-                        user.Email = reader["Email"].ToString();
-                        user.UserName = reader["user_name"].ToString();
-                        user.CompanyName = reader["company_name"].ToString();
-                        user.CompanyId = reader["company_id"].ToString();
-
-                        userList.Add(user);
+                        UserList.Add(user);
                     }
                 }
             }
             res.StatusCode = 200;
-            res.ResultSet = userList;
+            res.ResultSet = UserList;
             return res;
+
+
         }
     }
-}
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
