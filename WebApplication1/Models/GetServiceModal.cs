@@ -8,13 +8,10 @@ namespace WebApplication1.Models
 {
     public class GetServiceModal
     {
-        public string S_ID { get; set; }
-        public string S_Cost { get; set; }
+        public string S_ServiceID{ get; set; }
+        public string S_ServiceName { get; set; }
         public string S_Description { get; set; }
-        public string S_Name { get; set; }
-        public string S_CategoryId { get; set; }
-        public string S_Slots { get; set; }
-        public string S_TimePeriod { get; set; }
-
+        public string S_BaseCharge { get; set; }
+       
     }
 }

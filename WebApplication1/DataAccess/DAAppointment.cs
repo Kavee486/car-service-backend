@@ -13,8 +13,7 @@ namespace WebApplication1.DataAccess
 {
     public class DAAppointment : IAppointment
     {
-        private string date;
-        private string service_id;
+
 
         public GetAppointmentModal Appointment { get; private set; }
 
@@ -146,7 +145,7 @@ namespace WebApplication1.DataAccess
                             "FROM " +
                                      "appointments " +
                             "WHERE " +
-                                     "date = '" + date + "' AND service_id = '" + service_id + "'";
+                                     "date = '" + date + "' AND service_id = '" + serviceId+ "'";
 
             using (DBconnect DBconnect = new DBconnect())
             {

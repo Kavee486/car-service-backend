@@ -30,25 +30,25 @@ namespace WebApplication1.Controllers
 
 
         [HttpGet]
-        public ActionResult GetVehicleById(string id)
+        public ActionResult GetVehicleByCustomerID(string CustomerID)
         {
-            var result = _vehicle.GetVehicleById(id);
+            var result = _vehicle.GetVehicleByCustomerID(CustomerID);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
         [HttpGet]
-        public ActionResult GetVehicleByuserId(string id)
+        public ActionResult GetVehicleByVehicleID(string VehicleID)
         {
-            var result = _vehicle.GetVehicleByuserId(id);
+            var result = _vehicle.GetVehicleByVehicleID(VehicleID);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
         [HttpPost]
-        public ActionResult AddVehicalDetails(GetVehicleModal AddVehicle)
+        public ActionResult AddVehicalDetails(GetVehicleModal addVehicle)
         {
-            var result = _vehicle.AddVehicalDetails(AddVehicle);
+            var result = _vehicle.AddVehicalDetails(addVehicle);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }

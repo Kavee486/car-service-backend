@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
     public class AppointmentController : Controller
     {
         private readonly IAppointment _Appointment;
-        private object _servicecategory;
+        //private object _servicecategory;
 
         //DATest DATest = new DATest();
 

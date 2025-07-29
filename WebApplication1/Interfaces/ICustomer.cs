@@ -7,11 +7,11 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Interfaces
 {
-    public interface IService
+    public interface ICustomer
     {
-        Response AddServiceDetails(GetServiceModal addService);
-        Response GetAllServices();
-        Response GetServiceByServiceID(string ServiceID);
+        Response AddCustomerDetails(GetCustomerModal addCustomer);
+        Response GetAllCustomers();
+        Response GetCustomerByCustomerID(string CustomerID);
 
 
     }

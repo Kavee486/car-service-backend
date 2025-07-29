@@ -23,13 +23,10 @@ namespace WebApplication1.DataAccess
             List<GetServiceModal> ServiceList = new List<GetServiceModal>();
 
             string Query = "SELECT " +
-                                "id, " +
-                                "cost," +
-                                "description, " +
-                                "name, " +
-                                "category_id, " +
-                                "slots, " +
-                                "time_period " +
+                                "ServiceID, " +
+                                "ServiceName," +
+                                "Description, " +
+                                "BaseCharge " +
 
                             "FROM " +
                                 "services ";
@@ -43,13 +40,10 @@ namespace WebApplication1.DataAccess
 
                         GetServiceModal service = new GetServiceModal
                         {
-                            S_ID = reader["id"].ToString(),
-                            S_Cost = reader["cost"].ToString(),
+                            S_ServiceID = reader["ServiceID"].ToString(),
+                            S_ServiceName = reader["ServiceName"].ToString(),
                             S_Description = reader["description"].ToString(),
-                            S_Name = reader["name"].ToString(),
-                            S_CategoryId = reader["category_id"].ToString(),
-                            S_Slots = reader["slots"].ToString(),
-                            S_TimePeriod = reader["time_period"].ToString()
+                            S_BaseCharge = reader["BaseCharge"].ToString()
                         };
 
 
@@ -64,7 +58,7 @@ namespace WebApplication1.DataAccess
 
         }
 
-        public Response GetServiceById(string id)
+        public Response GetServiceByServiceID(string ServiceID)
         {
 
 
@@ -72,17 +66,14 @@ namespace WebApplication1.DataAccess
             List<GetServiceModal> ServiceList = new List<GetServiceModal>();
 
             string Query = "SELECT " +
-                                    "id, " +
-                                    "cost," +
-                                    "description, " +
-                                    "name, " +
-                                    "category_id, " +
-                                    "slots, " +
-                                    "time_period " +
+                                "ServiceID, " +
+                                "ServiceName," +
+                                "Description, " +
+                                "BaseCharge " +
                             "FROM " +
                                      "services " +
                             "WHERE " +
-                                     "id = '" + id + "'";
+                                     "ServiceID = '" + ServiceID + "'";
             using (var DBconnect = new DBconnect())
             {
                 using (SqlDataReader reader = DBconnect.ReadTable(Query))
@@ -92,13 +83,10 @@ namespace WebApplication1.DataAccess
 
                         GetServiceModal service = new GetServiceModal
                         {
-                            S_ID = reader["id"].ToString(),
-                            S_Cost = reader["cost"].ToString(),
+                            S_ServiceID = reader["ServiceID"].ToString(),
+                            S_ServiceName = reader["ServiceName"].ToString(),
                             S_Description = reader["description"].ToString(),
-                            S_Name = reader["name"].ToString(),
-                            S_CategoryId = reader["category_id"].ToString(),
-                            S_Slots = reader["slots"].ToString(),
-                            S_TimePeriod = reader["time_period"].ToString()
+                            S_BaseCharge = reader["BaseCharge"].ToString()
                         };
                         ServiceList.Add(service);
                     }
@@ -108,52 +96,7 @@ namespace WebApplication1.DataAccess
             res.ResultSet = ServiceList;
             return res;
         }
-        public Response GetServiceBycategoryId(string id)
-        {
-            Response res = new Response();
-            List<GetServiceModal> ServiceList = new List<GetServiceModal>();
-
-            string Query = "SELECT " +
-                                    "id, " +
-                                    "cost," +
-                                    "description, " +
-                                    "name, " +
-                                    "category_id, " +
-                                    "slots, " +
-                                    "time_period " +
-                            "FROM " +
-                                     "services " +
-                            "WHERE " +
-                                     "category_id = '" + id + "'";
-
-            using (var DBconnect = new DBconnect())
-            {
-                using (SqlDataReader reader = DBconnect.ReadTable(Query))
-                {
-                    while (reader.Read())
-                    {
-
-                        GetServiceModal service = new GetServiceModal
-                        {
-                            S_ID = reader["id"].ToString(),
-                            S_Cost = reader["cost"].ToString(),
-                            S_Description = reader["description"].ToString(),
-                            S_Name = reader["name"].ToString(),
-                            S_CategoryId = reader["category_id"].ToString(),
-                            S_Slots = reader["slots"].ToString(),
-                            S_TimePeriod = reader["time_period"].ToString()
-                        };
-                        ServiceList.Add(service);
-                        
-                    }
-                }
-            }
-            res.StatusCode = 200;
-            res.ResultSet = ServiceList;
-            return res;
-
-        }
-
+ 
         public Response AddServiceDetails(GetServiceModal addService)
         {
             Response res = new Response();
@@ -161,18 +104,12 @@ namespace WebApplication1.DataAccess
             try
             {
                 string Query = "INSERT INTO services " +
-                                          "(cost," +
-                                           "description," +
-                                           "name," +
-                                           "category_id," +
-                                           "slots," +
-                                           "time_period) " +
-                               "VALUES('" + addService.S_Cost + "'," +
+                                          "(ServiceName," +
+                                           "Description," +
+                                           "BaseCharge) " +
+                               "VALUES('" + addService.S_ServiceName + "'," +
                                        "'" + addService.S_Description + "'," +
-                                       "'" + addService.S_Name + "'," +
-                                       "'" + addService.S_CategoryId + "'," +
-                                       "'" + addService.S_Slots + "'," +
-                                       "'" + addService.S_TimePeriod + "')";
+                                       "'" + addService.S_BaseCharge + "')";
 
 
 

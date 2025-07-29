@@ -11,10 +11,12 @@ namespace WebApplication1.DataAccess
 {
     public class DAUser : IUser
     {
+
+
         public Response getAllUsers()
         {
             Response res = new Response();
-            List<GetUserModel> UserList = new List<GetUserModel>();
+            List<GetUserModal> UserList = new List<GetUserModal>();
 
             string Query = "SELECT " +
                                 "UserID, " +
@@ -32,16 +34,17 @@ namespace WebApplication1.DataAccess
                     while (reader.Read())
                     {
 
-                        GetUserModel user = new GetUserModel
+                        GetUserModal User = new GetUserModal
                         {
-                            U_UserID = reader["UserID"].ToString(),
-                            U_UserName = reader["UserName"].ToString(),
-                            U_PasswordHash = reader["PasswordHash"].ToString(),
-                            U_RoleID = reader["RoleID"].ToString()
+                            UserID = reader["UserID"].ToString(),
+                            UserName = reader["UserName"].ToString(),
+                            PasswordHash = reader["PasswordHash"].ToString(),
+                            RoleID = reader["RoleID"].ToString()
                         };
 
 
-                        UserList.Add(user);
+
+                        UserList.Add(User);
                     }
                 }
             }
@@ -52,26 +55,5 @@ namespace WebApplication1.DataAccess
 
         }
     }
-           
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
+}

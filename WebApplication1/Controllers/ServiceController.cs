@@ -30,17 +30,17 @@ namespace WebApplication1.Controllers
 
 
         [HttpGet]
-        public ActionResult GetServiceById(string id)
+        public ActionResult GetServiceByServiceID(string ServiceID)
         {
-            var result = _service.GetServiceById(id);
+            var result = _service.GetServiceByServiceID(ServiceID);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
         [HttpPost]
-        public ActionResult AddServiceDetails(GetServiceModal AddService)
+        public ActionResult AddServiceDetails(GetServiceModal addService)
         {
-            var result = _service.AddServiceDetails(AddService);
+            var result = _service.AddServiceDetails(addService);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }

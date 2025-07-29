@@ -12,6 +12,8 @@ namespace WebApplication1.DataAccess
 {
     public class DAVehicle : IVehicle
     {
+
+
         public Response AddVehicalDetails(GetVehicleModal addVehicle)
         {
             Response res = new Response();
@@ -19,20 +21,18 @@ namespace WebApplication1.DataAccess
             try
             {
                 string Query = "INSERT INTO vehicles " +
-                                          "(color," +
-                                           "license_plate," +
+                                          "(CustomerID," +
+                                           "PlateNumber," +
                                            "make," +
                                            "model," +
-                                           "user_id," +
-                                           "type," +
-                                           "vehicle_no) " +
-                               "VALUES('" + addVehicle.V_Color + "'," +
-                                       "'" + addVehicle.V_LicensePlate + "'," +
+                                           "Year," +
+                                           "VIN) " +
+                               "VALUES('" + addVehicle.V_CustomerID + "'," +
+                                       "'" + addVehicle.V_PlateNumber + "'," +
                                        "'" + addVehicle.V_Make + "'," +
                                        "'" + addVehicle.V_Model + "'," +
-                                       "'" + addVehicle.V_UserID + "'," +
-                                       "'" + addVehicle.V_Type + "'," +
-                                       "'" + addVehicle.V_No + "')";
+                                       "'" + addVehicle.V_Year + "'," +
+                                       "'" + addVehicle.V_VIN + "')";
 
 
 
@@ -60,14 +60,13 @@ namespace WebApplication1.DataAccess
             List<GetVehicleModal> VehicleList = new List<GetVehicleModal>();
 
             string Query = "SELECT " +
-                                "id, " +
-                                "color," +
-                                "license_plate, " +
+                                "VehicleID, " +
+                                "CustomerID," +
+                                "PlateNumber, " +
                                 "make, " +
                                 "model, " +
-                                "user_id, " +
-                                "type, " +
-                                "vehicle_no " +
+                                "Year, " +
+                                "VIN " +
                             "FROM " +
                                 "vehicles ";
 
@@ -81,14 +80,13 @@ namespace WebApplication1.DataAccess
                         GetVehicleModal Vehicle = new GetVehicleModal();
 
 
-                        Vehicle.V_ID = reader["id"].ToString();
-                        Vehicle.V_Color = reader["color"].ToString();
-                        Vehicle.V_LicensePlate = reader["license_plate"].ToString();
+                        Vehicle.V_VehicleID = reader["VehicleID"].ToString();
+                        Vehicle.V_CustomerID = reader["CustomerID"].ToString();
+                        Vehicle.V_PlateNumber = reader["PlateNumber"].ToString();
                         Vehicle.V_Make = reader["make"].ToString();
                         Vehicle.V_Model = reader["model"].ToString();
-                        Vehicle.V_UserID = reader["user_id"].ToString();
-                        Vehicle.V_Type = reader["type"].ToString();
-                        Vehicle.V_No = reader["vehicle_no"].ToString();
+                        Vehicle.V_Year = reader["Year"].ToString();
+                        Vehicle.V_VIN = reader["VIN"].ToString();
 
                         VehicleList.Add(Vehicle);
                     }
@@ -99,7 +97,7 @@ namespace WebApplication1.DataAccess
             return res;
         }
 
-        public Response GetVehicleById(string id)
+        public Response GetVehicleByCustomerID(string CustomerID)
         {
 
 
@@ -107,18 +105,17 @@ namespace WebApplication1.DataAccess
             List<GetVehicleModal> VehicleList = new List<GetVehicleModal>();
 
             string Query = "SELECT " +
-                                "id, " +
-                                "color," +
-                                "license_plate, " +
+                                "VehicleID, " +
+                                "CustomerID," +
+                                "PlateNumber, " +
                                 "make, " +
                                 "model, " +
-                                "user_id, " +
-                                "type, " +
-                                "vehicle_no " +
+                                "Year, " +
+                                "VIN " +
                             "FROM " +
                                 "vehicles " +
                             "WHERE " +
-                                "id = '" + id + "'";
+                                "CustomerID = '" + CustomerID + "'";
 
             using (var DBconnect = new DBconnect())
             {
@@ -130,14 +127,13 @@ namespace WebApplication1.DataAccess
                         GetVehicleModal Vehicle = new GetVehicleModal();
 
 
-                        Vehicle.V_ID = reader["id"].ToString();
-                        Vehicle.V_Color = reader["color"].ToString();
-                        Vehicle.V_LicensePlate = reader["license_plate"].ToString();
+                        Vehicle.V_VehicleID = reader["VehicleID"].ToString();
+                        Vehicle.V_CustomerID = reader["CustomerID"].ToString();
+                        Vehicle.V_PlateNumber = reader["PlateNumber"].ToString();
                         Vehicle.V_Make = reader["make"].ToString();
                         Vehicle.V_Model = reader["model"].ToString();
-                        Vehicle.V_UserID = reader["user_id"].ToString();
-                        Vehicle.V_Type = reader["type"].ToString();
-                        Vehicle.V_No = reader["vehicle_no"].ToString();
+                        Vehicle.V_Year = reader["Year"].ToString();
+                        Vehicle.V_VIN = reader["VIN"].ToString();
 
                         VehicleList.Add(Vehicle);
                     }
@@ -148,24 +144,23 @@ namespace WebApplication1.DataAccess
             return res;
            
         }
-        public Response GetVehicleByuserId(string id)
+        public Response GetVehicleByVehicleID(string VehicleID)
         {
             Response res = new Response();
             List<GetVehicleModal> VehicleList = new List<GetVehicleModal>();
 
             string Query = "SELECT " +
-                                "id, " +
-                                "color," +
-                                "license_plate, " +
+                                "VehicleID, " +
+                                "CustomerID," +
+                                "PlateNumber, " +
                                 "make, " +
                                 "model, " +
-                                "user_id, " +
-                                "type, " +
-                                "vehicle_no " +
+                                "Year, " +
+                                "VIN " +
                             "FROM " +
                                 "vehicles " +
                             "WHERE " +
-                                "id = '" + id + "'";
+                                "VehicleID = '" + VehicleID + "'";
 
             using (var DBconnect = new DBconnect())
             {
@@ -177,14 +172,13 @@ namespace WebApplication1.DataAccess
                         GetVehicleModal Vehicle = new GetVehicleModal();
 
 
-                        Vehicle.V_ID = reader["id"].ToString();
-                        Vehicle.V_Color = reader["color"].ToString();
-                        Vehicle.V_LicensePlate = reader["license_plate"].ToString();
+                        Vehicle.V_VehicleID = reader["VehicleID"].ToString();
+                        Vehicle.V_CustomerID = reader["CustomerID"].ToString();
+                        Vehicle.V_PlateNumber = reader["PlateNumber"].ToString();
                         Vehicle.V_Make = reader["make"].ToString();
                         Vehicle.V_Model = reader["model"].ToString();
-                        Vehicle.V_UserID = reader["user_id"].ToString();
-                        Vehicle.V_Type = reader["type"].ToString();
-                        Vehicle.V_No = reader["vehicle_no"].ToString();
+                        Vehicle.V_Year = reader["Year"].ToString();
+                        Vehicle.V_VIN = reader["VIN"].ToString();
 
                         VehicleList.Add(Vehicle);
                     }

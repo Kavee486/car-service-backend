@@ -1,8 +1,9 @@
 using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
-using WebApplication1.Interfaces;
 using WebApplication1.DataAccess;
+using WebApplication1.Interfaces;
+using WebApplication1.Models;
 
 namespace WebApplication1
 {
@@ -19,7 +20,9 @@ namespace WebApplication1
             container.RegisterType<IService, DAService>();
             container.RegisterType<IServiceCategory, DAServiceCategory>();
             container.RegisterType<IAppointment, DAAppointment>();
-            
+            container.RegisterType<IPartsInventory, DAPartsInventory>();
+            container.RegisterType<ICustomer, DACustomer>();
+
 
             // Set the dependency resolver for MVC
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));

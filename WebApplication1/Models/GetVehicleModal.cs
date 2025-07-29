@@ -7,14 +7,14 @@ namespace WebApplication1.Models
 {
     public class GetVehicleModal
     {
-        public string V_ID { get; set; }
-        public string V_Color { get; set; }
-        public string V_LicensePlate { get; set; }
+        public string V_VehicleID { get; set; }
+        public string V_CustomerID { get; set; }
+        public string V_PlateNumber { get; set; }
         public string V_Make { get; set; }
         public string V_Model { get; set; }
-        public string V_UserID { get; set; }
-        public string V_Type { get; set; }
-        public string V_No { get; set; }
+        public string V_Year { get; set; }
+        public string V_VIN { get; set; }
+
 
 
     }

@@ -14,7 +14,7 @@ namespace WebApplication1.DataAccess
         public Response TestUser()
         {
             Response res = new Response();
-            List<GetUserModel> userList = new List<GetUserModel>();
+            List<GetUserModal> userList = new List<GetUserModal>();
 
             string Query = "SELECT " +
                                 "User_id, " +
@@ -34,16 +34,13 @@ namespace WebApplication1.DataAccess
                     while (reader.Read())
                     {
 
-                        GetUserModel user = new GetUserModel();
+                        GetUserModal user = new GetUserModal();
 
 
-                        user.UserId = reader["User_id"].ToString();
-                        user.Type = reader["type"].ToString();
-                        user.PhoneNo = reader["phone_no"].ToString();
-                        user.Email = reader["Email"].ToString();
-                        user.UserName = reader["user_name"].ToString();
-                        user.CompanyName = reader["company_name"].ToString();
-                        user.CompanyId = reader["company_id"].ToString();
+                        //user.UserId = reader["User_id"].ToString();
+                        //user.Type = reader["type"].ToString();
+                        //user.PhoneNo = reader["phone_no"].ToString();
+                        //ser.CompanyId = reader["company_id"].ToString();
 
                         userList.Add(user);
                     }
