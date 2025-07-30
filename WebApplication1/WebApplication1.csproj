@@ -159,8 +159,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AppointmentController.cs" />
+    <Compile Include="Controllers\BookingsController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InvoicesController.cs" />
+    <Compile Include="Controllers\JobCardItemsController.cs" />
     <Compile Include="Controllers\PartsInventoryController.cs" />
     <Compile Include="Controllers\ServiceCategoryController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
@@ -169,6 +172,9 @@
     <Compile Include="Controllers\VehicleController.cs" />
     <Compile Include="DataAccess\DAAppointment.cs" />
     <Compile Include="DataAccess\DACustomer.cs" />
+    <Compile Include="DataAccess\DABookings.cs" />
+    <Compile Include="DataAccess\DAInvoices.cs" />
+    <Compile Include="DataAccess\DAJobCardItems.cs" />
     <Compile Include="DataAccess\DAPartsInventory.cs" />
     <Compile Include="DataAccess\DAService.cs" />
     <Compile Include="DataAccess\DAServiceCategory.cs" />
@@ -181,7 +187,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IAppointment.cs" />
+    <Compile Include="Interfaces\IBookings.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
+    <Compile Include="Interfaces\IInvoices.cs" />
+    <Compile Include="Interfaces\IJobCardItems.cs" />
     <Compile Include="Interfaces\IPartsInventory.cs" />
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Interfaces\IServiceCategory.cs" />
@@ -189,11 +198,14 @@
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
     <Compile Include="Models\GetAppointmentModal.cs" />
+    <Compile Include="Models\GetBookingsModal.cs" />
     <Compile Include="Models\GetCustomerModal.cs" />
+    <Compile Include="Models\GetInvoicesModal.cs" />
     <Compile Include="Models\GetPartsInventoryModal.cs" />
     <Compile Include="Models\GetServiceCategoryModal.cs" />
     <Compile Include="Models\GetServiceModal.cs" />
     <Compile Include="Models\GetVehicleModal.cs" />
+    <Compile Include="Models\GetJobCardItemsModal.cs" />
     <Compile Include="Models\Response.cs" />
     <Compile Include="Models\GetUserModal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -256,7 +268,10 @@
     <Folder Include="App_Data\" />
     <Folder Include="BusinessLayer\" />
     <Folder Include="Views\Appointment\" />
+    <Folder Include="Views\Bookings\" />
     <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Invoices\" />
+    <Folder Include="Views\JobCards\" />
     <Folder Include="Views\PartsInventory\" />
     <Folder Include="Views\ServiceCategory\" />
     <Folder Include="Views\Service\" />
