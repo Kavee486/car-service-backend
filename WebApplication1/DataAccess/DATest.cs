@@ -36,12 +36,6 @@ namespace WebApplication1.DataAccess
 
                         GetUserModal user = new GetUserModal();
 
-
-                        //user.UserId = reader["User_id"].ToString();
-                        //user.Type = reader["type"].ToString();
-                        //user.PhoneNo = reader["phone_no"].ToString();
-                        //ser.CompanyId = reader["company_id"].ToString();
-
                         userList.Add(user);
                     }
                 }

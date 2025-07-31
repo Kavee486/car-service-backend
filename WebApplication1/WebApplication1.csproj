@@ -164,6 +164,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvoicesController.cs" />
     <Compile Include="Controllers\JobCardItemsController.cs" />
+    <Compile Include="Controllers\JobCardsController.cs" />
     <Compile Include="Controllers\PartsInventoryController.cs" />
     <Compile Include="Controllers\ServiceCategoryController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
@@ -175,6 +176,7 @@
     <Compile Include="DataAccess\DABookings.cs" />
     <Compile Include="DataAccess\DAInvoices.cs" />
     <Compile Include="DataAccess\DAJobCardItems.cs" />
+    <Compile Include="DataAccess\DAJobCards.cs" />
     <Compile Include="DataAccess\DAPartsInventory.cs" />
     <Compile Include="DataAccess\DAService.cs" />
     <Compile Include="DataAccess\DAServiceCategory.cs" />
@@ -191,6 +193,7 @@
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IInvoices.cs" />
     <Compile Include="Interfaces\IJobCardItems.cs" />
+    <Compile Include="Interfaces\IJobCards.cs" />
     <Compile Include="Interfaces\IPartsInventory.cs" />
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Interfaces\IServiceCategory.cs" />
@@ -201,6 +204,7 @@
     <Compile Include="Models\GetBookingsModal.cs" />
     <Compile Include="Models\GetCustomerModal.cs" />
     <Compile Include="Models\GetInvoicesModal.cs" />
+    <Compile Include="Models\GetJobCardsModal.cs" />
     <Compile Include="Models\GetPartsInventoryModal.cs" />
     <Compile Include="Models\GetServiceCategoryModal.cs" />
     <Compile Include="Models\GetServiceModal.cs" />

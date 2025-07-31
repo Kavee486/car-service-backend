@@ -25,6 +25,7 @@ namespace WebApplication1
             container.RegisterType<IJobCardItems, DAJobCardItems>();
             container.RegisterType<IInvoices, DAInvoices>();
             container.RegisterType<IBookings, DABookings>();
+            container.RegisterType<IJobCards, DAJobCards>();
             // Set the dependency resolver for MVC
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
