@@ -158,7 +158,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="Controllers\AppointmentController.cs" />
     <Compile Include="Controllers\BookingsController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -171,7 +170,6 @@
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VehicleController.cs" />
-    <Compile Include="DataAccess\DAAppointment.cs" />
     <Compile Include="DataAccess\DACustomer.cs" />
     <Compile Include="DataAccess\DABookings.cs" />
     <Compile Include="DataAccess\DAInvoices.cs" />
@@ -188,7 +186,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IAppointment.cs" />
     <Compile Include="Interfaces\IBookings.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IInvoices.cs" />
@@ -200,7 +197,6 @@
     <Compile Include="Interfaces\ITest.cs" />
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
-    <Compile Include="Models\GetAppointmentModal.cs" />
     <Compile Include="Models\GetBookingsModal.cs" />
     <Compile Include="Models\GetCustomerModal.cs" />
     <Compile Include="Models\GetInvoicesModal.cs" />

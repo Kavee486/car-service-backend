@@ -13,7 +13,7 @@ namespace WebApplication1.Controllers
     {
         private readonly IService _service;
 
-        //DATest DATest = new DATest();
+        
 
         public ServiceController(IService service)
         {

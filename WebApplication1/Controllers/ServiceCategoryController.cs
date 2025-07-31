@@ -36,6 +36,7 @@ namespace WebApplication1.Controllers
             var result = _servicecategory.GetAllServiceCategoriesById(id);
             return Json(result, JsonRequestBehavior.AllowGet);
 
+
         }
 
 

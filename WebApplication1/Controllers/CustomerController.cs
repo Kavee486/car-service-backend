@@ -19,14 +19,12 @@ namespace WebApplication1.Controllers
         }
 
 
-
         [HttpGet]
         public ActionResult GetAllCustomers()
         {
             var result = _customer.GetAllCustomers();
             return Json(result, JsonRequestBehavior.AllowGet);
         }
-
 
         [HttpGet]
         public ActionResult GetCustomerByCustomerID(string CustomerID)
@@ -36,7 +34,6 @@ namespace WebApplication1.Controllers
 
         }
 
-
         [HttpPost]
         public ActionResult AddCustomerDetails(GetCustomerModal addCustomer)
         {
@@ -44,7 +41,6 @@ namespace WebApplication1.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
-
 
 
         // GET: Customer
