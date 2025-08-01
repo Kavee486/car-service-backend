@@ -189,5 +189,69 @@ namespace WebApplication1.DataAccess
             return res;
 
         }
+
+
+       
+        public Response DeleteVehicalDetails(GetVehicleModal addVehicle)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE vehicles
+                                        SET Status = 'I'
+                                        WHERE VehicleID = '" + addVehicle.V_VehicleID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
+        public Response PutVehicalDetails(GetVehicleModal addVehicle)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE vehicles
+                                        SET PlateNumber = '" + addVehicle.V_PlateNumber + @"',
+                                            make = '" + addVehicle.V_Make + @"',
+                                            model = '" + addVehicle.V_Model + @"'
+                                            Year = '" + addVehicle.V_Year + @"'
+                                            VIN = '" + addVehicle.V_VIN + @"',
+                                        WHERE VehicleID = '" + addVehicle.V_VehicleID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
     }
 }

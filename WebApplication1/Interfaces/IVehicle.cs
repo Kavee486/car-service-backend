@@ -11,8 +11,13 @@ namespace WebApplication1.Interfaces
     {
         Response AddVehicalDetails(GetVehicleModal addVehicle);
         Response getAllVehicles();
-       Response GetVehicleByCustomerID(string CustomerID);
-       Response GetVehicleByVehicleID(string VehicleID);
+        Response GetVehicleByCustomerID(string CustomerID);
+        Response GetVehicleByVehicleID(string VehicleID);
+        Response PutVehicalDetails(GetVehicleModal addVehicle);
+        Response DeleteVehicalDetails(GetVehicleModal addVehicle);
+       
+
+
         //put,delete
     }
 }

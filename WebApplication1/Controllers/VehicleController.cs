@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
 using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
 using WebApplication1.Models;
@@ -52,6 +53,31 @@ namespace WebApplication1.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
+
+
+        [HttpPost]
+        public ActionResult PutVehicalDetails(GetVehicleModal addVehicle)
+        {
+            var result = _vehicle.PutVehicalDetails(addVehicle);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeleteVehicalDetails(GetVehicleModal addVehicle)
+        {
+            var result = _vehicle.DeleteVehicalDetails(addVehicle);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+
+
+
+
+
 
         // GET: Vehicle
         public ActionResult Index()

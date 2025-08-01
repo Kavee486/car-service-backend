@@ -18,7 +18,7 @@ namespace WebApplication1
             container.RegisterType<IUser, DAUser>();
             container.RegisterType<IVehicle, DAVehicle>();
             container.RegisterType<IService, DAService>();
-            container.RegisterType<IServiceCategory, DAServiceCategory>();
+            //container.RegisterType<IServiceCategory, DAServiceCategory>();
             container.RegisterType<IPartsInventory, DAPartsInventory>();
             container.RegisterType<ICustomer, DACustomer>();
             container.RegisterType<IJobCardItems, DAJobCardItems>();

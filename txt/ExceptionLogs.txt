@@ -22,3 +22,6 @@ The statement has been terminated.;
 The statement has been terminated.;
 01/01/0001 00:00:00 ~ AddCustomerDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Customers_Users". The conflict occurred in database "Car_Service", table "dbo.Users", column 'UserID'.
 The statement has been terminated.;
+01/01/0001 00:00:00 ~ PutServiceDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ DeleteServiceDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ DeleteServiceDetails ~ Incorrect syntax near the keyword 'WHERE'.;

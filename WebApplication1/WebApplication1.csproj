@@ -165,7 +165,6 @@
     <Compile Include="Controllers\JobCardItemsController.cs" />
     <Compile Include="Controllers\JobCardsController.cs" />
     <Compile Include="Controllers\PartsInventoryController.cs" />
-    <Compile Include="Controllers\ServiceCategoryController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -181,7 +180,6 @@
     <Compile Include="DataAccess\DATest.cs" />
     <Compile Include="DataAccess\DAUser.cs" />
     <Compile Include="DataAccess\DAVehicle.cs" />
-    <Compile Include="DataAccess\ServiceCategoryModel.cs" />
     <Compile Include="DataBaseConnectivity\DBConnect.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -193,7 +191,6 @@
     <Compile Include="Interfaces\IJobCards.cs" />
     <Compile Include="Interfaces\IPartsInventory.cs" />
     <Compile Include="Interfaces\IService.cs" />
-    <Compile Include="Interfaces\IServiceCategory.cs" />
     <Compile Include="Interfaces\ITest.cs" />
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
@@ -202,7 +199,6 @@
     <Compile Include="Models\GetInvoicesModal.cs" />
     <Compile Include="Models\GetJobCardsModal.cs" />
     <Compile Include="Models\GetPartsInventoryModal.cs" />
-    <Compile Include="Models\GetServiceCategoryModal.cs" />
     <Compile Include="Models\GetServiceModal.cs" />
     <Compile Include="Models\GetVehicleModal.cs" />
     <Compile Include="Models\GetJobCardItemsModal.cs" />

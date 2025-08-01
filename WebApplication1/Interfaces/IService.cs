@@ -12,6 +12,9 @@ namespace WebApplication1.Interfaces
         Response AddServiceDetails(GetServiceModal addService);
         Response GetAllServices();
         Response GetServiceByServiceID(string ServiceID);
+        Response PutServiceDetails(GetServiceModal addService);
+        Response DeleteServiceDetails(GetServiceModal addService);
+
 
 
     }

@@ -45,6 +45,24 @@ namespace WebApplication1.Controllers
 
         }
 
+        [HttpPost]
+        public ActionResult PutServiceDetails(GetServiceModal addService)
+        {
+            var result = _service.PutServiceDetails(addService);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeleteServiceDetails(GetServiceModal addService)
+        {
+            var result = _service.DeleteServiceDetails(addService);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
 
         // GET: Service
         public ActionResult Index()

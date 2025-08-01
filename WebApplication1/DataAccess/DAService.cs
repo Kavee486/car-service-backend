@@ -29,7 +29,9 @@ namespace WebApplication1.DataAccess
                                 "BaseCharge " +
 
                             "FROM " +
-                                "services ";
+                                "services " +
+                            "WHERE " +
+                                "Status = 'A' ";
 
             using (var DBconnect = new DBconnect())
             {
@@ -97,6 +99,65 @@ namespace WebApplication1.DataAccess
             return res;
         }
  
+        public Response PutServiceDetails(GetServiceModal addService)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE services
+                                        SET ServiceName = '" + addService.S_ServiceName + @"',
+                                            Description = '" + addService.S_Description + @"',
+                                            BaseCharge = '" + addService.S_BaseCharge + @"'
+                                        WHERE ServiceID = '" + addService.S_ServiceID + @"'";
+             
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+        public Response DeleteServiceDetails(GetServiceModal addService)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE services
+                                        SET Status = 'I'
+                                        WHERE ServiceID = '" + addService.S_ServiceID + @"'";
+             
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
         public Response AddServiceDetails(GetServiceModal addService)
         {
             Response res = new Response();
@@ -106,9 +167,11 @@ namespace WebApplication1.DataAccess
                 string Query = "INSERT INTO services " +
                                           "(ServiceName," +
                                            "Description," +
+                                           "Status," +
                                            "BaseCharge) " +
                                "VALUES('" + addService.S_ServiceName + "'," +
                                        "'" + addService.S_Description + "'," +
+                                       "'A'," +
                                        "'" + addService.S_BaseCharge + "')";
 
 
