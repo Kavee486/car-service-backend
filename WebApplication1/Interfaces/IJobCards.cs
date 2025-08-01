@@ -11,6 +11,8 @@ namespace WebApplication1.Interfaces
     {
         Response GetAllJobCards();
         Response GetJobCardsByJobCardID(string JobCardID);
+        Response PutJobCardsDetails(GetJobCardsModal addJobCards);
+        Response DeleteJobCardsDetails(GetJobCardsModal addJobCards);
 
     }
 }

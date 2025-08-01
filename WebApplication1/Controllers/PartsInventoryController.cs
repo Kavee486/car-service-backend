@@ -50,6 +50,25 @@ namespace WebApplication1.Controllers
 
 
 
+        [HttpPost]
+        public ActionResult PutPartInventoryDetails(GetPartsInventoryModal addPartsInventory)
+        {
+            var result = _PartsInventory.PutPartInventoryDetails(addPartsInventory);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeletePartInventoryDetails(GetPartsInventoryModal addPartsInventory)
+        {
+            var result = _PartsInventory.DeletePartInventoryDetails(addPartsInventory);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+
     }
 }
 

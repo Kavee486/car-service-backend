@@ -12,7 +12,7 @@ namespace WebApplication1.Interfaces
         Response getAllPartsInventory();
         Response GetPartsInventoryByPartID(string PartID);
         Response AddPartInventoryDetails(GetPartsInventoryModal addPartsInventory);
-
-
+        Response PutPartInventoryDetails(GetPartsInventoryModal addPartsInventory);
+        Response DeletePartInventoryDetails(GetPartsInventoryModal addPartsInventory);
     }
 }

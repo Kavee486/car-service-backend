@@ -12,6 +12,9 @@ namespace WebApplication1.Interfaces
         Response GetAllBookings();
         Response GetBookingsByCustomerID(string CustomerID);
         Response GetBookingsByVehicleID(string VehicleID);
+        Response GetBookingsByBookingID(string BookingID);
+        Response PutBookingsDetails(GetBookingsModal addBookings);
+        Response DeleteBookingsDetails(GetBookingsModal addBookings);
 
     }
 }

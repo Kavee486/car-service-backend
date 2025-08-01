@@ -128,5 +128,67 @@ namespace WebApplication1.DataAccess
             return res;
         }
 
+
+        public Response PutPartInventoryDetails(GetPartsInventoryModal addPartsInventory)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE PartsInventory
+                                        SET PartName = '" + addPartsInventory.P_PartName + @"',
+                                            StockQty = '" + addPartsInventory.P_StockQty + @"',
+                                            UnitPrice = '" + addPartsInventory.P_UnitPrice + @"'
+                                        WHERE PartID = '" + addPartsInventory.P_PartID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
+        public Response DeletePartInventoryDetails(GetPartsInventoryModal addPartsInventory)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE PartsInventory
+                                        SET Status = 'I'
+                                        WHERE PartID = '" + addPartsInventory.P_PartID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
+
     }
 }

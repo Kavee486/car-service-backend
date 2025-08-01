@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
 using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -39,7 +41,22 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult PutJobCardsDetails(GetJobCardsModal addJobCards)
+        {
+            var result = _JobCards.PutJobCardsDetails(addJobCards);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeleteJobCardsDetails(GetJobCardsModal addJobCards)
+        {
+            var result = _JobCards.DeleteJobCardsDetails(addJobCards);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
 
 
 

@@ -1,11 +1,12 @@
-﻿using System;
+﻿using biZTrack.Static;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using WebApplication1.Database_Layer;
 using WebApplication1.Interfaces;
 using WebApplication1.Models;
-using WebApplication1.Database_Layer;
 
 namespace WebApplication1.DataAccess
 {
@@ -139,6 +140,84 @@ namespace WebApplication1.DataAccess
             res.StatusCode = 200;
             res.ResultSet = BookingsList;
             return res;
+        }
+
+
+
+
+        public Response GetBookingsByBookingID(string BookingID)
+        {
+            Response res = new Response();
+            List<GetBookingsModal> BookingsList = new List<GetBookingsModal>();
+
+            string Query = "SELECT " +
+                                "BookingID, " +
+                                "CustomerID," +
+                                "VehicleID, " +
+                                "BookingDate," +
+                                "PrefferedDate, " +
+                                "Status " +
+                            "FROM " +
+                                     "Bookings " +
+                            "WHERE " +
+                                     "BookingID = '" + BookingID + "'";
+            using (var DBconnect = new DBconnect())
+            {
+                using (SqlDataReader reader = DBconnect.ReadTable(Query))
+                {
+                    while (reader.Read())
+                    {
+
+                        GetBookingsModal Bookings = new GetBookingsModal
+                        {
+                            B_BookingID = reader["BookingID"].ToString(),
+                            B_CustomerID = reader["CustomerID"].ToString(),
+                            B_VehicleID = reader["VehicleID"].ToString(),
+                            B_BookingDate = reader["BookingDate"].ToString(),
+                            B_PrefferedDate = reader["PrefferedDate"].ToString(),
+                            B_Status = reader["Status"].ToString()
+                        };
+                        BookingsList.Add(Bookings);
+                    }
+                }
+            }
+            res.StatusCode = 200;
+            res.ResultSet = BookingsList;
+            return res;
+        }
+
+        public Response PutBookingsDetails(GetBookingsModal addBookings)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE Bookings
+                                        SET Status = '" + addBookings.B_Status + @"',
+                                        WHERE BookingID = '" + addBookings.B_BookingID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
+        public Response DeleteBookingsDetails(GetJobCardsModal addBookings)
+        {
+            throw new NotImplementedException();
         }
     }
 }

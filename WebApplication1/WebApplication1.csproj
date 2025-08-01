@@ -176,7 +176,6 @@
     <Compile Include="DataAccess\DAJobCards.cs" />
     <Compile Include="DataAccess\DAPartsInventory.cs" />
     <Compile Include="DataAccess\DAService.cs" />
-    <Compile Include="DataAccess\DAServiceCategory.cs" />
     <Compile Include="DataAccess\DATest.cs" />
     <Compile Include="DataAccess\DAUser.cs" />
     <Compile Include="DataAccess\DAVehicle.cs" />

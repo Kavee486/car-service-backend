@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
 using WebApplication1.Models;
 
@@ -46,7 +47,31 @@ namespace WebApplication1.Controllers
 
 
 
+        [HttpGet]
+        public ActionResult GetBookingsByBookingID(string BookingID)
+        {
+            var result = _Booking.GetBookingsByVehicleID(BookingID);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
+        }
+
+
+        [HttpPost]
+        public ActionResult PutBookingsDetails(GetBookingsModal addBookings)
+        {
+            var result = _Booking.PutBookingsDetails(addBookings);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeleteBookingsDetails(GetBookingsModal addBookings)
+        {
+            var result = _Booking.DeleteBookingsDetails(addBookings);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
 
 
         // GET: Bookings

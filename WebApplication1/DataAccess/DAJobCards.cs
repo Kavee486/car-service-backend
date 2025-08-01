@@ -1,4 +1,5 @@
-﻿using System;
+﻿using biZTrack.Static;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -14,6 +15,51 @@ namespace WebApplication1.DataAccess
 {
     public class DAJobCards: IJobCards
     {
+        public Response DeleteJobCardsDetails(GetJobCardsModal addJobCards)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE JobCards
+                                        SET Status = 'I'
+                                        WHERE JobCardID = '" + addJobCards.J_JobCardID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public Response GetAllJobCards()
 
         {
@@ -95,8 +141,35 @@ namespace WebApplication1.DataAccess
             res.ResultSet = JobCardsList;
             return res;
         }
-        
+
+        public Response PutJobCardsDetails(GetJobCardsModal addJobCards)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE PartsInventory
+                                        SET Technician = '" + addJobCards.J_Technician + @"',
+                                            Status = '" + addJobCards.J_Status + @"'
+                                        WHERE JobCardID = '" + addJobCards.J_JobCardID + @"'";
 
 
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
     }
 }
