@@ -52,6 +52,35 @@ namespace WebApplication1.DataAccess
             return res;
         }
 
+        public Response DeletJobCardItemsDetails(GetJobCardItemsModal addJobCardItems)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE JobCardItems
+                                        SET Status = 'I'
+                                        WHERE ItemID = '" + addJobCardItems.J_ItemID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
         public Response GetAllJobCardItems()
 
         {
@@ -177,6 +206,36 @@ namespace WebApplication1.DataAccess
             }
             res.StatusCode = 200;
             res.ResultSet = JobCardItemsList;
+            return res;
+        }
+
+        public Response PutJobCardItemsDetails(GetJobCardItemsModal addJobCardItems)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE Customers
+                                        SET PartID = '" + addJobCardItems.J_PartID + @"',
+                                              Qty = '" + addJobCardItems.J_Qty + @"',
+                                        WHERE ItemID = '" + addJobCardItems.J_ItemID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
             return res;
         }
     }

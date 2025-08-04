@@ -13,6 +13,8 @@ namespace WebApplication1.Models
         public string J_PartID { get; set; }
         public string J_Qty { get; set; }
         public string J_Charge { get; set; }
+        public string J_Status { get; set; }
+
 
 
     }

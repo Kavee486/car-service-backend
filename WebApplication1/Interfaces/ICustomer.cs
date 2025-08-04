@@ -12,6 +12,8 @@ namespace WebApplication1.Interfaces
         Response AddCustomerDetails(GetCustomerModal addCustomer);
         Response GetAllCustomers();
         Response GetCustomerByCustomerID(string CustomerID);
+        Response PutCustomerDetails(GetCustomerModal addCustomer);
+        Response DeleteCustomerDetails(GetCustomerModal addCustomer);
 
 
     }

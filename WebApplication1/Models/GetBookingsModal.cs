@@ -12,7 +12,7 @@ namespace WebApplication1.Models
         public string B_VehicleID { get; set; }
         public string B_BookingDate { get; set; }
         public string B_PrefferedDate { get; set; }
-        public string B_Status { get; set; }
+        public string B_BookingStatus { get; set; }
 
 
 

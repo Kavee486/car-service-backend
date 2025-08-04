@@ -11,8 +11,10 @@ namespace WebApplication1.Models
         public string J_BookingID { get; set; }
         public string J_CreatedDate { get; set; }
         public string J_Technician { get; set; }
+        public string J_JobCardStatus { get; set; }
         public string J_Status { get; set; }
- 
+
+
 
     }
 }

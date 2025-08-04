@@ -13,6 +13,8 @@ namespace WebApplication1.Models
         public string C_Phone { get; set; }
         public string C_Email { get; set; }
         public string C_Address { get; set; }
+        public string C_Status { get; set; }
+
 
 
 

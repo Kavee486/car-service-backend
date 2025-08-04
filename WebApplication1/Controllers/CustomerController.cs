@@ -43,6 +43,31 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult PutCustomerDetails(GetCustomerModal addCustomer)
+        {
+            var result = _customer.PutCustomerDetails(addCustomer);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeleteCustomerDetails(GetCustomerModal addCustomer)
+        {
+            var result = _customer.DeleteCustomerDetails(addCustomer);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+
+
+
+
+
+
+
         // GET: Customer
         public ActionResult Index()
         {

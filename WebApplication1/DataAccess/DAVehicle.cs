@@ -198,7 +198,7 @@ namespace WebApplication1.DataAccess
             DBconnect DBconnect = new DBconnect();
             try
             {
-                string updateQuery = @" UPDATE vehicles
+                string updateQuery = @" UPDATE Vehicles
                                         SET Status = 'I'
                                         WHERE VehicleID = '" + addVehicle.V_VehicleID + @"'";
 

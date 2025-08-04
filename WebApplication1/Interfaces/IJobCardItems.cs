@@ -13,8 +13,8 @@ namespace WebApplication1.Interfaces
         Response GetJobCardItemsByJobCardID(string JobCardID);
         Response GetJobCardItemsByServiceID(string ServiceID);
         Response AddJobCardItemsDetails(GetJobCardItemsModal addJobCardItems);
-
-
-
+        Response PutJobCardItemsDetails(GetJobCardItemsModal addJobCardItems);
+        Response DeletJobCardItemsDetails(GetJobCardItemsModal addJobCardItems);
+        
     }
 }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -36,7 +38,22 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult PutInvoicesDetails(GetInvoicesModal addInvoice)
+        {
+            var result = _Invoices.PutInvoicesDetails(addInvoice);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeleteInvoicesDetails(GetInvoicesModal addInvoice)
+        {
+            var result = _Invoices.DeleteInvoicesDetails(addInvoice);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
 
 
 

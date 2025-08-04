@@ -54,6 +54,29 @@ namespace WebApplication1.Controllers
 
         }
 
+
+
+        [HttpPost]
+        public ActionResult PutJobCardItemsDetails(GetJobCardItemsModal addJobCardItems)
+        {
+            var result = _JobCardItems.PutJobCardItemsDetails(addJobCardItems);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpDelete]
+        public ActionResult DeletJobCardItemsDetails(GetJobCardItemsModal addJobCardItems)
+        {
+            var result = _JobCardItems.DeletJobCardItemsDetails(addJobCardItems);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+
+
+
         // GET: Appointment
         public ActionResult Index()
         {

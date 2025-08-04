@@ -11,6 +11,8 @@ namespace WebApplication1.Interfaces
     {
         Response GetAllInvoices();
         Response GetInvoicesByInvoiceID(string InvoiceID);
+        Response PutInvoicesDetails(GetInvoicesModal addInvoice);
+        Response DeleteInvoicesDetails(GetInvoicesModal addInvoice);
 
 
 

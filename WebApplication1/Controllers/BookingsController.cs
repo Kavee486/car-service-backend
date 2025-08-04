@@ -74,6 +74,8 @@ namespace WebApplication1.Controllers
         }
 
 
+
+
         // GET: Bookings
         public ActionResult Index()
         {

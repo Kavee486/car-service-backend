@@ -44,22 +44,6 @@ namespace WebApplication1.DataAccess
             return res;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public Response GetAllJobCards()
 
         {
@@ -71,7 +55,7 @@ namespace WebApplication1.DataAccess
                                 "BookingID," +
                                 "CreatedDate, " +
                                 "Technician, " +
-                                "Status " +
+                                "JobCardStatus " +
                             "FROM " +
                                 "JobCards ";
 
@@ -88,7 +72,7 @@ namespace WebApplication1.DataAccess
                             J_BookingID = reader["BookingID"].ToString(),
                             J_CreatedDate = reader["CreatedDate"].ToString(),
                             J_Technician = reader["Technician"].ToString(),
-                            J_Status = reader["Status"].ToString()
+                            J_JobCardStatus = reader["JobCardStatus"].ToString()
                         };
 
 
@@ -113,7 +97,7 @@ namespace WebApplication1.DataAccess
                                 "BookingID," +
                                 "CreatedDate, " +
                                 "Technician, " +
-                                "Status " +
+                                "JobCardStatus " +
                             "FROM " +
                                      "JobCards " +
                             "WHERE " +
@@ -131,7 +115,7 @@ namespace WebApplication1.DataAccess
                             J_BookingID = reader["BookingID"].ToString(),
                             J_CreatedDate = reader["CreatedDate"].ToString(),
                             J_Technician = reader["Technician"].ToString(),
-                            J_Status = reader["Status"].ToString()
+                            J_JobCardStatus = reader["JobCardStatus"].ToString()
                         };
                         JobCardsList.Add(JobCards);
                     }
@@ -150,7 +134,7 @@ namespace WebApplication1.DataAccess
             {
                 string updateQuery = @" UPDATE PartsInventory
                                         SET Technician = '" + addJobCards.J_Technician + @"',
-                                            Status = '" + addJobCards.J_Status + @"'
+                                            JobCardStatus = '" + addJobCards.J_JobCardStatus + @"'
                                         WHERE JobCardID = '" + addJobCards.J_JobCardID + @"'";
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using biZTrack.Static;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -11,6 +12,35 @@ namespace WebApplication1.DataAccess
 {
     public class DAInvoices: IInvoices
     {
+        public Response DeleteInvoicesDetails(GetInvoicesModal addInvoice)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE Invoices
+                                        SET Status = 'I'
+                                        WHERE InvoiceID = '" + addInvoice.I_InvoiceID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
         public Response GetAllInvoices()
 
         {
@@ -95,6 +125,35 @@ namespace WebApplication1.DataAccess
             return res;
 
 
+        }
+
+        public Response PutInvoicesDetails(GetInvoicesModal addInvoice)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE Invoices
+                                        SET PaymentStatus = '" + addInvoice.I_PaymentStatus + @"',
+                                        WHERE InvoiceID = '" + addInvoice.I_InvoiceID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
         }
     }
 }

@@ -12,5 +12,7 @@ namespace WebApplication1.Models
         public string I_InvoiceDate { get; set; }
         public string I_TotalAmount { get; set; }
         public string I_PaymentStatus { get; set; }
+        public string I_Status { get; set; }
+
     }
 }

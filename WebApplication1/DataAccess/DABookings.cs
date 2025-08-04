@@ -24,7 +24,7 @@ namespace WebApplication1.DataAccess
                                 "VehicleID, " +
                                 "BookingDate," +
                                 "PrefferedDate, " +
-                                "Status " +
+                                "BookingStatus " +
 
                             "FROM " +
                                 "Bookings ";
@@ -43,7 +43,7 @@ namespace WebApplication1.DataAccess
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
                             B_PrefferedDate = reader["PrefferedDate"].ToString(),
-                            B_Status = reader["Status"].ToString()
+                            B_BookingStatus = reader["BookingStatus"].ToString()
                         };
 
 
@@ -71,7 +71,7 @@ namespace WebApplication1.DataAccess
                                 "VehicleID, " +
                                 "BookingDate," +
                                 "PrefferedDate, " +
-                                "Status " +
+                                "BookingStatus " +
                             "FROM " +
                                      "Bookings " +
                             "WHERE " +
@@ -90,7 +90,7 @@ namespace WebApplication1.DataAccess
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
                             B_PrefferedDate = reader["PrefferedDate"].ToString(),
-                            B_Status = reader["Status"].ToString()
+                            B_BookingStatus = reader["BookingStatus"].ToString()
                         };
                         BookingsList.Add(Bookings);
                     }
@@ -112,7 +112,7 @@ namespace WebApplication1.DataAccess
                                 "VehicleID, " +
                                 "BookingDate," +
                                 "PrefferedDate, " +
-                                "Status " +
+                                "BookingStatus " +
                             "FROM " +
                                      "Bookings " +
                             "WHERE " +
@@ -131,7 +131,7 @@ namespace WebApplication1.DataAccess
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
                             B_PrefferedDate = reader["PrefferedDate"].ToString(),
-                            B_Status = reader["Status"].ToString()
+                            B_BookingStatus = reader["BookingStatus"].ToString()
                         };
                         BookingsList.Add(Bookings);
                     }
@@ -156,7 +156,7 @@ namespace WebApplication1.DataAccess
                                 "VehicleID, " +
                                 "BookingDate," +
                                 "PrefferedDate, " +
-                                "Status " +
+                                "BookingStatus " +
                             "FROM " +
                                      "Bookings " +
                             "WHERE " +
@@ -175,7 +175,7 @@ namespace WebApplication1.DataAccess
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
                             B_PrefferedDate = reader["PrefferedDate"].ToString(),
-                            B_Status = reader["Status"].ToString()
+                            B_BookingStatus = reader["BookingStatus"].ToString()
                         };
                         BookingsList.Add(Bookings);
                     }
@@ -193,7 +193,7 @@ namespace WebApplication1.DataAccess
             try
             {
                 string updateQuery = @" UPDATE Bookings
-                                        SET Status = '" + addBookings.B_Status + @"',
+                                        SET BookingStatus = '" + addBookings.B_BookingStatus + @"',
                                         WHERE BookingID = '" + addBookings.B_BookingID + @"'";
 
 
@@ -215,9 +215,35 @@ namespace WebApplication1.DataAccess
             return res;
         }
 
-        public Response DeleteBookingsDetails(GetJobCardsModal addBookings)
+
+
+        public Response DeleteBookingsDetails(GetBookingsModal addBookings)
         {
-            throw new NotImplementedException();
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @" UPDATE Bookings
+                                        SET Status = 'I'
+                                        WHERE BookingID = '" + addBookings.B_BookingID + @"'";
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
         }
     }
 }
