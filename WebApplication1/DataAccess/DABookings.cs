@@ -23,7 +23,7 @@ namespace WebApplication1.DataAccess
                                 "CustomerID," +
                                 "VehicleID, " +
                                 "BookingDate," +
-                                "PrefferedDate, " +
+                                "PreferredDate, " +
                                 "BookingStatus " +
 
                             "FROM " +
@@ -42,7 +42,7 @@ namespace WebApplication1.DataAccess
                             B_CustomerID = reader["CustomerID"].ToString(),
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
-                            B_PrefferedDate = reader["PrefferedDate"].ToString(),
+                            B_PreferredDate = reader["PreferredDate"].ToString(),
                             B_BookingStatus = reader["BookingStatus"].ToString()
                         };
 
@@ -70,7 +70,7 @@ namespace WebApplication1.DataAccess
                                 "CustomerID," +
                                 "VehicleID, " +
                                 "BookingDate," +
-                                "PrefferedDate, " +
+                                "PreferredDate, " +
                                 "BookingStatus " +
                             "FROM " +
                                      "Bookings " +
@@ -89,7 +89,7 @@ namespace WebApplication1.DataAccess
                             B_CustomerID = reader["CustomerID"].ToString(),
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
-                            B_PrefferedDate = reader["PrefferedDate"].ToString(),
+                            B_PreferredDate = reader["PreferredDate"].ToString(),
                             B_BookingStatus = reader["BookingStatus"].ToString()
                         };
                         BookingsList.Add(Bookings);
@@ -111,7 +111,7 @@ namespace WebApplication1.DataAccess
                                 "CustomerID," +
                                 "VehicleID, " +
                                 "BookingDate," +
-                                "PrefferedDate, " +
+                                "PreferredDate, " +
                                 "BookingStatus " +
                             "FROM " +
                                      "Bookings " +
@@ -130,7 +130,7 @@ namespace WebApplication1.DataAccess
                             B_CustomerID = reader["CustomerID"].ToString(),
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
-                            B_PrefferedDate = reader["PrefferedDate"].ToString(),
+                            B_PreferredDate = reader["PreferredDate"].ToString(),
                             B_BookingStatus = reader["BookingStatus"].ToString()
                         };
                         BookingsList.Add(Bookings);
@@ -155,7 +155,7 @@ namespace WebApplication1.DataAccess
                                 "CustomerID," +
                                 "VehicleID, " +
                                 "BookingDate," +
-                                "PrefferedDate, " +
+                                "PreferredDate, " +
                                 "BookingStatus " +
                             "FROM " +
                                      "Bookings " +
@@ -174,7 +174,7 @@ namespace WebApplication1.DataAccess
                             B_CustomerID = reader["CustomerID"].ToString(),
                             B_VehicleID = reader["VehicleID"].ToString(),
                             B_BookingDate = reader["BookingDate"].ToString(),
-                            B_PrefferedDate = reader["PrefferedDate"].ToString(),
+                            B_PreferredDate = reader["PreferredDate"].ToString(),
                             B_BookingStatus = reader["BookingStatus"].ToString()
                         };
                         BookingsList.Add(Bookings);
@@ -193,7 +193,7 @@ namespace WebApplication1.DataAccess
             try
             {
                 string updateQuery = @" UPDATE Bookings
-                                        SET BookingStatus = '" + addBookings.B_BookingStatus + @"',
+                                        SET BookingStatus = '" + addBookings.B_BookingStatus + @"'
                                         WHERE BookingID = '" + addBookings.B_BookingID + @"'";
 
 

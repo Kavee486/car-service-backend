@@ -58,21 +58,6 @@ namespace WebApplication1.Controllers
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // GET: Invoices
         public ActionResult Index()
         {

@@ -50,7 +50,7 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public ActionResult GetBookingsByBookingID(string BookingID)
         {
-            var result = _Booking.GetBookingsByVehicleID(BookingID);
+            var result = _Booking.GetBookingsByBookingID(BookingID);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }

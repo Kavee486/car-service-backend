@@ -132,7 +132,7 @@ namespace WebApplication1.DataAccess
             DBconnect DBconnect = new DBconnect();
             try
             {
-                string updateQuery = @" UPDATE PartsInventory
+                string updateQuery = @" UPDATE JobCards
                                         SET Technician = '" + addJobCards.J_Technician + @"',
                                             JobCardStatus = '" + addJobCards.J_JobCardStatus + @"'
                                         WHERE JobCardID = '" + addJobCards.J_JobCardID + @"'";

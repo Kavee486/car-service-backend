@@ -134,7 +134,7 @@ namespace WebApplication1.DataAccess
             try
             {
                 string updateQuery = @" UPDATE Invoices
-                                        SET PaymentStatus = '" + addInvoice.I_PaymentStatus + @"',
+                                        SET PaymentStatus = '" + addInvoice.I_PaymentStatus + @"'
                                         WHERE InvoiceID = '" + addInvoice.I_InvoiceID + @"'";
 
 

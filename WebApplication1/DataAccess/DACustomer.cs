@@ -113,11 +113,13 @@ namespace WebApplication1.DataAccess
                                            "FullName," +
                                            "Phone," +
                                            "Email," +
+                                           "Status," +
                                            "Address) " +
                                "VALUES('"  + addCustomer.C_UserID + "'," +
                                        "'" + addCustomer.C_FullName + "'," +
                                        "'" + addCustomer.C_Phone + "'," +
                                        "'" + addCustomer.C_Email + "'," +
+                                       "'A'," +
                                        "'" + addCustomer.C_Address + "')";
 
 
@@ -147,10 +149,10 @@ namespace WebApplication1.DataAccess
             try
             {
                 string updateQuery = @" UPDATE Customers
-                                        SET FullNmae = '" + addCustomer.C_FullName + @"',
+                                        SET FullName = '" + addCustomer.C_FullName + @"',
                                               Phone = '" + addCustomer.C_Phone + @"',
                                               Email = '" + addCustomer.C_Email + @"',
-                                              Address = '" + addCustomer.C_Address + @"',
+                                              Address = '" + addCustomer.C_Address + @"'
                                         WHERE CustomerID = '" + addCustomer.C_CustomerID + @"'";
 
 

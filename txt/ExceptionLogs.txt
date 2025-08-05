@@ -25,3 +25,15 @@ The statement has been terminated.;
 01/01/0001 00:00:00 ~ PutServiceDetails ~ Incorrect syntax near the keyword 'WHERE'.;
 01/01/0001 00:00:00 ~ DeleteServiceDetails ~ Incorrect syntax near the keyword 'WHERE'.;
 01/01/0001 00:00:00 ~ DeleteServiceDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ PutVehicalDetails ~ Incorrect syntax near 'Year'.;
+01/01/0001 00:00:00 ~ PutVehicalDetails ~ Incorrect syntax near 'Year'.;
+01/01/0001 00:00:00 ~ AddPartInventoryDetails ~ Error converting data type varchar to numeric.;
+01/01/0001 00:00:00 ~ PutJobCardsDetails ~ Invalid column name 'JobCardID'.;
+01/01/0001 00:00:00 ~ PutJobCardItemsDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ PutJobCardItemsDetails ~ Invalid column name 'ItemID'.;
+01/01/0001 00:00:00 ~ PutInvoicesDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ AddCustomerDetails ~ Violation of UNIQUE KEY constraint 'UQ__Customer__1788CCADF5BC19AE'. Cannot insert duplicate key in object 'dbo.Customers'. The duplicate key value is (3).
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ PutCustomerDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ PutBookingsDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ PutBookingsDetails ~ Incorrect syntax near the keyword 'WHERE'.;

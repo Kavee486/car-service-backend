@@ -54,6 +54,8 @@ namespace WebApplication1.Controllers
         }
 
 
+
+
         [HttpDelete]
         public ActionResult DeleteServiceDetails(GetServiceModal addService)
         {
@@ -61,6 +63,7 @@ namespace WebApplication1.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
+
 
 
 

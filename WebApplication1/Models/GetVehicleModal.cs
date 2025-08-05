@@ -14,7 +14,7 @@ namespace WebApplication1.Models
         public string V_Model { get; set; }
         public string V_Year { get; set; }
         public string V_VIN { get; set; }
-        public string V_Status { get; set; }
+        //public string V_Status { get; set; }
 
 
 

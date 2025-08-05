@@ -230,9 +230,9 @@ namespace WebApplication1.DataAccess
                 string updateQuery = @" UPDATE vehicles
                                         SET PlateNumber = '" + addVehicle.V_PlateNumber + @"',
                                             make = '" + addVehicle.V_Make + @"',
-                                            model = '" + addVehicle.V_Model + @"'
-                                            Year = '" + addVehicle.V_Year + @"'
-                                            VIN = '" + addVehicle.V_VIN + @"',
+                                            model = '" + addVehicle.V_Model + @"',
+                                            Year = '" + addVehicle.V_Year + @"',
+                                            VIN = '" + addVehicle.V_VIN + @"'
                                         WHERE VehicleID = '" + addVehicle.V_VehicleID + @"'";
 
 

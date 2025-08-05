@@ -22,9 +22,11 @@ namespace WebApplication1.DataAccess
                 string Query = "INSERT INTO PartsInventory " +
                                           "(PartName," +
                                            "StockQty," +
+                                           "Status," +
                                            "UnitPrice) " +
                                "VALUES('" + addPartsInventory.P_PartName + "'," +
                                        "'" + addPartsInventory.P_StockQty + "'," +
+                                       "'A'," +
                                        "'" + addPartsInventory.P_UnitPrice + "')";
 
 
@@ -59,8 +61,10 @@ namespace WebApplication1.DataAccess
                                 "PartName," +
                                 "StockQty, " +
                                 "UnitPrice " +
-                            "FROM " +
-                                "PartsInventory ";
+                           "FROM " +
+                                "PartsInventory " +
+                            "WHERE " +
+                                "Status = 'A' ";
 
             using (var DBconnect = new DBconnect())
             {

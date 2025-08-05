@@ -25,11 +25,13 @@ namespace WebApplication1.DataAccess
                                            "ServiceID," +
                                            "PartID," +
                                            "Qty," +
+                                           "Status," +
                                            "Charge) " +
                                "VALUES('" + addJobCardItems.J_JobCardID + "'," +
                                        "'" + addJobCardItems.J_ServiceID + "'," +
                                        "'" + addJobCardItems.J_PartID + "'," +
                                        "'" + addJobCardItems.J_Qty + "'," +
+                                       "'A'," +
                                        "'" + addJobCardItems.J_Charge + "')";
 
 
@@ -215,9 +217,9 @@ namespace WebApplication1.DataAccess
             DBconnect DBconnect = new DBconnect();
             try
             {
-                string updateQuery = @" UPDATE Customers
+                string updateQuery = @" UPDATE JobCardItems
                                         SET PartID = '" + addJobCardItems.J_PartID + @"',
-                                              Qty = '" + addJobCardItems.J_Qty + @"',
+                                              Qty = '" + addJobCardItems.J_Qty + @"'
                                         WHERE ItemID = '" + addJobCardItems.J_ItemID + @"'";
 
 
