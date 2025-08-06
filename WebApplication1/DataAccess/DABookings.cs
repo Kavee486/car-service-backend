@@ -245,5 +245,45 @@ namespace WebApplication1.DataAccess
             }
             return res;
         }
+
+        public Response AddBookingsDetails(GetBookingsModal addBookings)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string Query = "INSERT INTO Bookings " +
+                                          "(CustomerID," +
+                                           "VehicleID," +
+                                           "BookingDate," +
+                                           "PreferredDate," +
+                                           "Status," +
+                                           "BookingStatus) " +
+                               "VALUES('" + addBookings.B_CustomerID + "'," +
+                                       "'" + addBookings.B_VehicleID + "'," +
+                                       "'" + addBookings.B_BookingDate + "'," +
+                                       "'" + addBookings.B_PreferredDate + "'," +
+                                       "'A'," +
+                                       "'" + addBookings.B_BookingStatus + "')";
+
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(Query))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
     }
 }

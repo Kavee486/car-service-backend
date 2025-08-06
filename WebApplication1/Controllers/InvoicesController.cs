@@ -56,6 +56,15 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult AddInvoicesDetails(GetInvoicesModal addInvoice)
+        {
+            var result = _Invoices.AddInvoicesDetails(addInvoice);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
 
 
         // GET: Invoices

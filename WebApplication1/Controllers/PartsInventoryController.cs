@@ -15,14 +15,14 @@ namespace WebApplication1.Controllers
         private readonly IPartsInventory _PartsInventory;
 
 
-        //DATest DATest = new DATest();
+        
 
         public PartsInventoryController(IPartsInventory partsinventory)
         {
             _PartsInventory = partsinventory;
         }
 
-        // GET: Test
+       
 
         [HttpGet]
         public ActionResult getAllPartsInventory()

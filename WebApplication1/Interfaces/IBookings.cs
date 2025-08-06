@@ -10,6 +10,7 @@ namespace WebApplication1.Interfaces
     public interface IBookings
     {
         Response GetAllBookings();
+        Response AddBookingsDetails(GetBookingsModal addBookings);
         Response GetBookingsByCustomerID(string CustomerID);
         Response GetBookingsByVehicleID(string VehicleID);
         Response GetBookingsByBookingID(string BookingID);

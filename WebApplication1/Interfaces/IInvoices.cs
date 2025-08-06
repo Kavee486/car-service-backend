@@ -10,6 +10,8 @@ namespace WebApplication1.Interfaces
     public interface IInvoices
     {
         Response GetAllInvoices();
+        Response AddInvoicesDetails(GetInvoicesModal addInvoice);
+
         Response GetInvoicesByInvoiceID(string InvoiceID);
         Response PutInvoicesDetails(GetInvoicesModal addInvoice);
         Response DeleteInvoicesDetails(GetInvoicesModal addInvoice);

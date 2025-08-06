@@ -37,3 +37,8 @@ The statement has been terminated.;
 01/01/0001 00:00:00 ~ PutCustomerDetails ~ Incorrect syntax near the keyword 'WHERE'.;
 01/01/0001 00:00:00 ~ PutBookingsDetails ~ Incorrect syntax near the keyword 'WHERE'.;
 01/01/0001 00:00:00 ~ PutBookingsDetails ~ Incorrect syntax near the keyword 'WHERE'.;
+01/01/0001 00:00:00 ~ AddInvoicesDetails ~ Invalid column name 'JobCardID'.
+Invalid column name 'InvoiceDate'.
+Invalid column name 'TotalAmount'.
+Invalid column name 'PaymentStatus'.;
+01/01/0001 00:00:00 ~ AddInvoicesDetails ~ Error converting data type varchar to numeric.;

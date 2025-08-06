@@ -26,12 +26,14 @@ namespace WebApplication1.DataAccess
                                            "make," +
                                            "model," +
                                            "Year," +
+                                           "Status," +
                                            "VIN) " +
                                "VALUES('" + addVehicle.V_CustomerID + "'," +
                                        "'" + addVehicle.V_PlateNumber + "'," +
                                        "'" + addVehicle.V_Make + "'," +
                                        "'" + addVehicle.V_Model + "'," +
                                        "'" + addVehicle.V_Year + "'," +
+                                       "'A'," +
                                        "'" + addVehicle.V_VIN + "')";
 
 

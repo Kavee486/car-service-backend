@@ -15,6 +15,45 @@ namespace WebApplication1.DataAccess
 {
     public class DAJobCards: IJobCards
     {
+        public Response AddJobCardsDetails(GetJobCardsModal addJobCards)
+        {
+
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string Query = "INSERT INTO JobCards " +
+                                          "(BookingID," +
+                                           "CreatedDate," +
+                                           "Technician," +
+                                           "Status," +
+                                           "JobCardStatus) " +
+                               "VALUES('" + addJobCards.J_BookingID + "'," +
+                                       "'" + addJobCards.J_CreatedDate + "'," +
+                                       "'" + addJobCards.J_Technician + "'," +
+                                       "'A'," +
+                                       "'" + addJobCards.J_JobCardStatus + "')";
+
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(Query))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
         public Response DeleteJobCardsDetails(GetJobCardsModal addJobCards)
         {
             Response res = new Response();
@@ -155,5 +194,7 @@ namespace WebApplication1.DataAccess
             }
             return res;
         }
+
+
     }
 }

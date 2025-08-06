@@ -58,6 +58,13 @@ namespace WebApplication1.Controllers
 
         }
 
+        [HttpPost]
+        public ActionResult AddJobCardsDetails(GetJobCardsModal addJobCards)
+        {
+            var result = _JobCards.AddJobCardsDetails(addJobCards);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
 
 
 

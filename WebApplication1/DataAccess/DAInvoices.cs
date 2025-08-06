@@ -12,6 +12,44 @@ namespace WebApplication1.DataAccess
 {
     public class DAInvoices: IInvoices
     {
+        public Response AddInvoicesDetails(GetInvoicesModal addInvoice)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string Query = "INSERT INTO Invoices " +
+                                          "(JobCardID," +
+                                           "InvoiceDate," +
+                                           "TotalAmount," +
+                                           "Status," +
+                                           "PaymentStatus) " +
+                               "VALUES('" + addInvoice.I_JobCardID + "'," +
+                                       "'" + addInvoice.I_InvoiceDate + "'," +
+                                       "'" + addInvoice.I_TotalAmount + "'," +
+                                       "'A'," +
+                                       "'" + addInvoice.I_PaymentStatus + "')";
+
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(Query))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
         public Response DeleteInvoicesDetails(GetInvoicesModal addInvoice)
         {
             Response res = new Response();

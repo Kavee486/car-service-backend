@@ -74,6 +74,15 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult AddBookingsDetails(GetBookingsModal addBookings)
+        {
+            var result = _Booking.AddBookingsDetails(addBookings);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
 
 
         // GET: Bookings

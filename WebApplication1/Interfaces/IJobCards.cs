@@ -10,6 +10,7 @@ namespace WebApplication1.Interfaces
     public interface IJobCards
     {
         Response GetAllJobCards();
+        Response AddJobCardsDetails(GetJobCardsModal addJobCards);
         Response GetJobCardsByJobCardID(string JobCardID);
         Response PutJobCardsDetails(GetJobCardsModal addJobCards);
         Response DeleteJobCardsDetails(GetJobCardsModal addJobCards);
