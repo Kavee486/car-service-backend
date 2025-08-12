@@ -29,7 +29,7 @@ namespace WebApplication1.Database_Layer
             return connection;
         }
 
-        public SqlDataReader ReadTable(string readStr)
+        public SqlDataReader ReadTable(string readStr, SqlParameter sqlParameter)
         {
             SqlConnection connection = GetOpenConnection();
             var command = new SqlCommand(readStr, connection);
@@ -55,6 +55,11 @@ namespace WebApplication1.Database_Layer
         }
 
         internal void ExecuteQuery(string query)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal SqlDataReader ReadTable(string query)
         {
             throw new NotImplementedException();
         }
