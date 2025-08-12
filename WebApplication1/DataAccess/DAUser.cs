@@ -1,4 +1,5 @@
-﻿using System;
+﻿using biZTrack.Static;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,7 +13,44 @@ namespace WebApplication1.DataAccess
 {
     public class DAUser : IUser
     {
+        public Response AddUserDetails(GetUserModal addUser)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string Query = "INSERT INTO Users " +
+                                          "(UserName," +
+                                           "RoleID," +
+                                           "MobileNo," +
+                                           "Status," +
+                                           "Email) " +
+                               "VALUES('" + addUser.UserName + "'," +
+                                       "'" + addUser.RoleID + "'," +
+                                       "'" + addUser.MobileNo + "'," +
+                                       "'A'," +
+                                       "'" + addUser.Email + "')";
 
+
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(Query))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+        
 
         public Response getAllUsers()
         {
@@ -22,7 +60,6 @@ namespace WebApplication1.DataAccess
             string Query = "SELECT " +
                                 "UserID, " +
                                 "UserName," +
-                                "PasswordHash, " +
                                 "RoleID " +
 
                             "FROM " +
@@ -39,7 +76,6 @@ namespace WebApplication1.DataAccess
                         {
                             UserID = reader["UserID"].ToString(),
                             UserName = reader["UserName"].ToString(),
-                            PasswordHash = reader["PasswordHash"].ToString(),
                             RoleID = reader["RoleID"].ToString()
                         };
 

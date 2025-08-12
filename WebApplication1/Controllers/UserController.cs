@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Helpers;
-using System.Web.Http;
+//using System.Web.Http;
 using System.Web.Mvc;
 using WebApplication1.DataAccess;
 using WebApplication1.Interfaces;
+using WebApplication1.Models;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace WebApplication1.Controllers
@@ -20,14 +21,25 @@ namespace WebApplication1.Controllers
 
         //DATest DATest = new DATest();
 
-        public UserController(IUser user)
+        public UserController(IUser User)
         {
-            _User = user;
+            _User = User;
         }
 
-        // GET: Test
+        [HttpGet]
+        public ActionResult getAllUsers()
+        {
+            var result = _User.getAllUsers();
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
 
-   
+        [HttpPost]
+        public ActionResult AddUserDetails(GetUserModal addUser)
+        {
+            var result = _User.AddUserDetails(addUser);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
 
 
 

@@ -10,6 +10,6 @@ namespace WebApplication1.Interfaces
     public interface IUser
     {
         Response getAllUsers();
-        
+        Response AddUserDetails(GetUserModal addUser);
     }
 }
