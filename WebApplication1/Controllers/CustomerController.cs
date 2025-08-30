@@ -52,7 +52,7 @@ namespace WebApplication1.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         public ActionResult DeleteCustomerDetails(GetCustomerModal addCustomer)
         {
             var result = _customer.DeleteCustomerDetails(addCustomer);

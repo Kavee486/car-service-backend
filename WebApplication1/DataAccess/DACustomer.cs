@@ -25,6 +25,7 @@ namespace WebApplication1.DataAccess
                                 "FullName, " +
                                 "Phone," +
                                 "Email, " +
+                                "Status, " +
                                 "Address " +
 
                             "FROM " +
@@ -44,6 +45,7 @@ namespace WebApplication1.DataAccess
                             C_FullName = reader["FullName"].ToString(),
                             C_Phone = reader["Phone"].ToString(),
                             C_Email = reader["Email"].ToString(),
+                            C_Status = reader["Status"].ToString(),
                             C_Address = reader["Address"].ToString()
                         };
 

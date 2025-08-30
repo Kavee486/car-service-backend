@@ -28,5 +28,34 @@ namespace WebApplication1
 
             //container.RegisterType<ITest, DATest>();
         }
-    }
+        protected void Application_BeginRequest(object sender, EventArgs e)
+        {
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "http://localhost:5173");
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+            if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
+            {
+                HttpContext.Current.Response.StatusCode = 200;
+                HttpContext.Current.Response.End();
+            }
+        }
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            Exception ex = Server.GetLastError();
+            Server.ClearError();
+            HttpContext.Current.Response.Clear();
+            HttpContext.Current.Response.StatusCode = 500;
+            HttpContext.Current.Response.ContentType = "application/json";
+            var errorResponse = new
+            {
+                Message = ex.Message,
+                StackTrace = ex.StackTrace
+            };
+            HttpContext.Current.Response.Write(
+                Newtonsoft.Json.JsonConvert.SerializeObject(errorResponse)
+            );
+            HttpContext.Current.Response.End();
+        }
+   
+}
 }

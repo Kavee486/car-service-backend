@@ -64,7 +64,7 @@ namespace WebApplication1.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         public ActionResult DeleteVehicalDetails(GetVehicleModal addVehicle)
         {
             var result = _vehicle.DeleteVehicalDetails(addVehicle);

@@ -44,7 +44,7 @@ namespace WebApplication1.DataAccess
                         {
                             S_ServiceID = reader["ServiceID"].ToString(),
                             S_ServiceName = reader["ServiceName"].ToString(),
-                            S_Description = reader["description"].ToString(),
+                            S_Description = reader["Description"].ToString(),
                             S_BaseCharge = reader["BaseCharge"].ToString()
                         };
 
@@ -62,7 +62,6 @@ namespace WebApplication1.DataAccess
 
         public Response GetServiceByServiceID(string ServiceID)
         {
-
 
             Response res = new Response();
             List<GetServiceModal> ServiceList = new List<GetServiceModal>();

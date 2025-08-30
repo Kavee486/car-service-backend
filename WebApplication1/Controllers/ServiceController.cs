@@ -56,7 +56,7 @@ namespace WebApplication1.Controllers
 
 
 
-        [HttpDelete]
+        [HttpPost]
         public ActionResult DeleteServiceDetails(GetServiceModal addService)
         {
             var result = _service.DeleteServiceDetails(addService);

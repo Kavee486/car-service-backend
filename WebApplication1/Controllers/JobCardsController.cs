@@ -50,7 +50,7 @@ namespace WebApplication1.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         public ActionResult DeleteJobCardsDetails(GetJobCardsModal addJobCards)
         {
             var result = _JobCards.DeleteJobCardsDetails(addJobCards);
