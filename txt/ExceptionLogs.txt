@@ -79,3 +79,11 @@ Invalid column name 'PaymentStatus'.;
 01/01/0001 00:00:00 ~ AddPartInventoryDetails ~ Error converting data type varchar to numeric.;
 01/01/0001 00:00:00 ~ AddPartInventoryDetails ~ Error converting data type varchar to numeric.;
 01/01/0001 00:00:00 ~ AddPartInventoryDetails ~ Error converting data type varchar to numeric.;
+01/01/0001 00:00:00 ~ AddVehicalDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Vehicles_Customers". The conflict occurred in database "Car_Service", table "dbo.Customers", column 'CustomerID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddVehicalDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Vehicles_Customers". The conflict occurred in database "Car_Service", table "dbo.Customers", column 'CustomerID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddVehicalDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Vehicles_Customers". The conflict occurred in database "Car_Service", table "dbo.Customers", column 'CustomerID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ PutJobCardItemsDetails ~ The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_JobCardItems_PartsInventory". The conflict occurred in database "Car_Service", table "dbo.PartsInventory", column 'PartID'.
+The statement has been terminated.;
