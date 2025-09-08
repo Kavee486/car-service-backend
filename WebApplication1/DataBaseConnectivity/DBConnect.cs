@@ -51,6 +51,26 @@ namespace WebApplication1.Database_Layer
             return affectedRows > 0;
         }
 
+
+        // <<< Add this method to support fetching a single value >>>
+        public object ExecuteScalar(string query)
+        {
+            object result = null;
+            using (SqlConnection connection = GetOpenConnection())
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    result = command.ExecuteScalar();
+                }
+            }
+            return result;
+        }
+
+
+
+
+
+
         public void Dispose()
         {
             if (_connection != null)

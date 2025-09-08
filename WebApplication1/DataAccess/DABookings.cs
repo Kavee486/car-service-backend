@@ -186,23 +186,39 @@ namespace WebApplication1.DataAccess
             return res;
         }
 
+
         public Response PutBookingsDetails(GetBookingsModal addBookings)
         {
             Response res = new Response();
             DBconnect DBconnect = new DBconnect();
             try
             {
-                string updateQuery = @" UPDATE Bookings
-                                        SET BookingStatus = '" + addBookings.B_BookingStatus + @"'
-                                        WHERE BookingID = '" + addBookings.B_BookingID + @"'";
-
+                // Update booking status
+                string updateQuery = @"UPDATE Bookings
+                               SET BookingStatus = '" + addBookings.B_BookingStatus + @"'
+                               WHERE BookingID = '" + addBookings.B_BookingID + @"'";
 
                 using (var dbConnect = new DBconnect())
                 {
                     if (dbConnect.AddEditDel(updateQuery))
                     {
+                        // Fetch customer's phone number for this booking
+                        string getCustomerQuery = @"SELECT c.Phone
+                                            FROM Customers c
+                                            INNER JOIN Bookings b ON c.CustomerID = b.CustomerID
+                                            WHERE b.BookingID = '" + addBookings.B_BookingID + @"'";
+
+                        string customerPhone = dbConnect.ExecuteScalar(getCustomerQuery)?.ToString();
+
+                        // Send SMS if phone is found
+                        if (!string.IsNullOrEmpty(customerPhone))
+                        {
+                            string message = "Your AudoDeck vehicle Service booking status has been updated to: " + addBookings.B_BookingStatus;
+                            SendSMS(customerPhone, message);
+                        }
+
                         res.StatusCode = 200;
-                        res.Result = "Success!!";
+                        res.Result = "Success!! Booking updated and SMS sent.";
                     }
                 }
             }
@@ -214,6 +230,33 @@ namespace WebApplication1.DataAccess
             }
             return res;
         }
+
+        // SMS sending function using your service
+        private void SendSMS(string contact, string message)
+        {
+            try
+            {
+                using (var client = new System.Net.Http.HttpClient())
+                {
+                    string encodedMessage = System.Web.HttpUtility.UrlEncode(message);
+                    string smsApiUrl = $"https://esystems.cdl.lk/Backend/SMSGateway/api/SMS/DTSSendMessage?mobileNo={contact}&message={encodedMessage}";
+                    var response = client.GetAsync(smsApiUrl).Result;
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        LogHandler.WriteToLog($"SMS sending failed to {contact}", "SendSMS");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, "SendSMS");
+            }
+        }
+
+
+
+
 
 
 

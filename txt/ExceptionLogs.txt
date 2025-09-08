@@ -87,3 +87,16 @@ The statement has been terminated.;
 The statement has been terminated.;
 01/01/0001 00:00:00 ~ PutJobCardItemsDetails ~ The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_JobCardItems_PartsInventory". The conflict occurred in database "Car_Service", table "dbo.PartsInventory", column 'PartID'.
 The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Violation of UNIQUE KEY constraint 'UQ__Users__C9F2845601D0C51D'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (erer).
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
+01/01/0001 00:00:00 ~ AddUserDetails ~ Conversion failed when converting the varchar value 'customer' to data type int.;
