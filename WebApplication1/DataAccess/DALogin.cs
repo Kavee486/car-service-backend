@@ -23,6 +23,10 @@ namespace WebApplication1.DataAccess
         }
 
 
+        private static Dictionary<string, int> otpStorage = new Dictionary<string, int>();
+
+
+
         public OtpResponse Login(string contact)
         {
             OtpResponse res = new OtpResponse();
@@ -41,6 +45,7 @@ namespace WebApplication1.DataAccess
                         {
                             UserName = reader["UserName"].ToString(),
                             MobileNo = reader["MobileNo"].ToString(),
+                            RoleID = Convert.ToInt32(reader["RoleID"]),
                             Email = reader["Email"].ToString()
                         };
                         UserList.Add(User);
@@ -53,6 +58,12 @@ namespace WebApplication1.DataAccess
             {
                 Random random = new Random();
                 int otp = random.Next(10000, 99999);
+
+                // STORE THE OTP IN THE DICTIONARY - THIS IS THE MISSING LINE!
+                otpStorage[contact] = otp;
+
+
+
                 string message = $"Your OTP is: {otp}.";
                 string smsApiUrl = $"https://esystems.cdl.lk/Backend/SMSGateway/api/SMS/DTSSendMessage?mobileNo={contact}&message={message}";
 
@@ -65,6 +76,7 @@ namespace WebApplication1.DataAccess
                         res.StatusCode = 200;
                         res.Result = $"OTP sent successfully to {contact}.";
                         res.OtpCode = otp;
+                        res.RoleID = UserList[0].RoleID;
                         res.UserName = UserList[0].UserName;  // Return the first user if only one is found
                         res.Email = UserList[0].Email;       // Return email in the response
                     }
@@ -72,6 +84,11 @@ namespace WebApplication1.DataAccess
                     {
                         res.StatusCode = 500;
                         res.Result = "Failed to send OTP via SMS Gateway.";
+                        // Remove the OTP if sending failed
+                        if (otpStorage.ContainsKey(contact))
+                        {
+                            otpStorage.Remove(contact);
+                        }
                     }
                 }
             }
@@ -86,26 +103,25 @@ namespace WebApplication1.DataAccess
 
 
         // Verify OTP
-        //public ApiResponse VerifyOtp(string contact, int otpCode)
-        //{
-        //    ApiResponse res = new ApiResponse();
+        public ApiResponse VerifyOtp(string contact, int otpCode)
+        {
+            ApiResponse res = new ApiResponse();
 
-        //    // Check if OTP exists for the contact and validate it
-        //    if (otpStorage.ContainsKey(contact) && otpStorage[contact] == otpCode)
-        //    {
-        //        res.StatusCode = 200;
-        //        res.Result = "OTP verified successfully. You can now log in.";
-        //        otpStorage.Remove(contact);  // Remove OTP after successful verification
-        //    }
-        //    else
-        //    {
-        //        res.StatusCode = 400;
-        //        res.Result = "Invalid OTP or OTP expired.";
-        //    }
+            // Check if OTP exists for the contact and validate it
+            if (otpStorage.ContainsKey(contact) && otpStorage[contact] == otpCode)
+            {
+                res.StatusCode = 200;
+                res.Result = "OTP verified successfully. You can now log in.";
+                otpStorage.Remove(contact);  // Remove OTP after successful verification
+            }
+            else
+            {
+                res.StatusCode = 400;
+                res.Result = "Invalid OTP or OTP expired.";
+            }
 
-        //    return res;
-        //}
-
+            return res;
+        }
 
     }
 

@@ -16,6 +16,7 @@ namespace WebApplication1.Models
         public string UserName { get; set; }
         public string Email { get; set; }
         public int OtpCode { get; set; }
+        public int RoleID { get;  set; }
     }
 
 

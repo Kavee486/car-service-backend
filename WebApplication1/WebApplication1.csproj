@@ -209,6 +209,7 @@
     <Compile Include="Controllers\Login1Controller.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PartsInventoryController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -220,6 +221,7 @@
     <Compile Include="DataAccess\DAJobCards.cs" />
     <Compile Include="DataAccess\DALogin.cs" />
     <Compile Include="DataAccess\DAPartsInventory.cs" />
+    <Compile Include="DataAccess\DARole.cs" />
     <Compile Include="DataAccess\DAService.cs" />
     <Compile Include="DataAccess\DATest.cs" />
     <Compile Include="DataAccess\DAUser.cs" />
@@ -235,6 +237,7 @@
     <Compile Include="Interfaces\IJobCards.cs" />
     <Compile Include="Interfaces\ILogin.cs" />
     <Compile Include="Interfaces\IPartsInventory.cs" />
+    <Compile Include="Interfaces\IRole.cs" />
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Interfaces\ITest.cs" />
     <Compile Include="Interfaces\IUser.cs" />
@@ -245,6 +248,7 @@
     <Compile Include="Models\GetJobCardsModal.cs" />
     <Compile Include="Models\GetLoginModal.cs" />
     <Compile Include="Models\GetPartsInventoryModal.cs" />
+    <Compile Include="Models\GetRoleModal.cs" />
     <Compile Include="Models\GetServiceModal.cs" />
     <Compile Include="Models\GetVehicleModal.cs" />
     <Compile Include="Models\GetJobCardItemsModal.cs" />
@@ -318,6 +322,7 @@
     <Folder Include="Views\Login1\" />
     <Folder Include="Views\Login\" />
     <Folder Include="Views\PartsInventory\" />
+    <Folder Include="Views\Role\" />
     <Folder Include="Views\ServiceCategory\" />
     <Folder Include="Views\Service\" />
     <Folder Include="Views\Test1\" />
