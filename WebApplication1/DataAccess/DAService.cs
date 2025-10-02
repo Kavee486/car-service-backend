@@ -26,7 +26,8 @@ namespace WebApplication1.DataAccess
                                 "ServiceID, " +
                                 "ServiceName," +
                                 "Description, " +
-                                "BaseCharge " +
+                                "BaseCharge, " +
+                                "Time " +
 
                             "FROM " +
                                 "services " +
@@ -45,7 +46,8 @@ namespace WebApplication1.DataAccess
                             S_ServiceID = reader["ServiceID"].ToString(),
                             S_ServiceName = reader["ServiceName"].ToString(),
                             S_Description = reader["Description"].ToString(),
-                            S_BaseCharge = reader["BaseCharge"].ToString()
+                            S_BaseCharge = reader["BaseCharge"].ToString(),
+                            S_Time = reader["Time"].ToString()
                         };
 
 
@@ -70,7 +72,8 @@ namespace WebApplication1.DataAccess
                                 "ServiceID, " +
                                 "ServiceName," +
                                 "Description, " +
-                                "BaseCharge " +
+                                "BaseCharge, " +
+                                "Time " +
                             "FROM " +
                                      "services " +
                             "WHERE " +
@@ -87,7 +90,8 @@ namespace WebApplication1.DataAccess
                             S_ServiceID = reader["ServiceID"].ToString(),
                             S_ServiceName = reader["ServiceName"].ToString(),
                             S_Description = reader["description"].ToString(),
-                            S_BaseCharge = reader["BaseCharge"].ToString()
+                            S_BaseCharge = reader["BaseCharge"].ToString(),
+                            S_Time = reader["Time"].ToString()
                         };
                         ServiceList.Add(service);
                     }
@@ -107,7 +111,8 @@ namespace WebApplication1.DataAccess
                 string updateQuery = @" UPDATE services
                                         SET ServiceName = '" + addService.S_ServiceName + @"',
                                             Description = '" + addService.S_Description + @"',
-                                            BaseCharge = '" + addService.S_BaseCharge + @"'
+                                            BaseCharge = '" + addService.S_BaseCharge + @"',
+                                            Time = '" + addService.S_Time + @"'
                                         WHERE ServiceID = '" + addService.S_ServiceID + @"'";
              
 
@@ -166,10 +171,12 @@ namespace WebApplication1.DataAccess
                 string Query = "INSERT INTO services " +
                                           "(ServiceName," +
                                            "Description," +
+                                           "Time," +
                                            "Status," +
                                            "BaseCharge) " +
                                "VALUES('" + addService.S_ServiceName + "'," +
                                        "'" + addService.S_Description + "'," +
+                                       "'" + addService.S_Time + "'," +
                                        "'A'," +
                                        "'" + addService.S_BaseCharge + "')";
 

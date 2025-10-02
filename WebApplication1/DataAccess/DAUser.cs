@@ -96,6 +96,47 @@ namespace WebApplication1.DataAccess
         }
 
 
+        public Response GetUserByMobileNo(string MobileNo)
+        {
+
+            Response res = new Response();
+            List<GetUserModal> UserList = new List<GetUserModal>();
+
+            string Query = "SELECT " +
+                                "UserID, " +
+                                "UserName," +
+                                "RoleID," +
+                                "MobileNo, " +
+                                "Email " +
+                            "FROM " +
+                                     "Users " +
+                            "WHERE " +
+                                     "MobileNo = '" + MobileNo + "'";
+            using (var DBconnect = new DBconnect())
+            {
+                using (SqlDataReader reader = DBconnect.ReadTable(Query))
+                {
+                    while (reader.Read())
+                    {
+
+                        GetUserModal User = new GetUserModal
+                        {
+                            UserID = reader["UserID"].ToString(),
+                            UserName = reader["UserName"].ToString(),
+                            RoleID = reader["RoleID"].ToString(),
+                            MobileNo = reader["MobileNo"].ToString(),
+                            Email = reader["Email"].ToString()
+                        };
+                        UserList.Add(User);
+                    }
+                }
+            }
+            res.StatusCode = 200;
+            res.ResultSet = UserList;
+            return res;
+        }
+
+
 
 
 

@@ -9,10 +9,12 @@ namespace WebApplication1.Models
     {
         public string UserID { get; set; }
         public string UserName { get; set; }
-        public string PasswordHash { get; set; }
         public string RoleID { get; set; }
         public string MobileNo { get; set; }
         public string Email { get; set; }
+        public string Status { get; set; }
+
+
 
     }
 }

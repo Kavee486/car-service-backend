@@ -9,6 +9,8 @@ namespace WebApplication1.Models
     {
         public int StatusCode { get; set; }
         public object Result { get; set; }
+       
+        public string RedirectUrl { get; set; }  // New field for redirection
     }
 
     public class OtpResponse : ApiResponse

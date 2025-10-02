@@ -104,3 +104,31 @@ The statement has been terminated.;
 The statement has been terminated.;
 01/01/0001 00:00:00 ~ AddUserDetails ~ Violation of UNIQUE KEY constraint 'UQ__Users__C9F2845601D0C51D'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (sara).
 The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddJobCardItemsDetails ~ Conversion failed when converting the varchar value 'test' to data type int.;
+01/01/0001 00:00:00 ~ AddJobCardItemsDetails ~ Conversion failed when converting the varchar value 'test' to data type int.;
+01/01/0001 00:00:00 ~ AddVehicalDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Vehicles_Customers". The conflict occurred in database "Car_Service", table "dbo.Customers", column 'CustomerID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddVehicalDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Vehicles_Customers". The conflict occurred in database "Car_Service", table "dbo.Customers", column 'CustomerID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ PutServiceDetails ~ Incorrect syntax near 'Time'.;
+01/01/0001 00:00:00 ~ PutBookingTimeDetails ~ Invalid column name 'StartingTime'.
+Invalid column name 'EndingTime'.;
+01/01/0001 00:00:00 ~ PutBookingTimeDetails ~ Invalid column name 'StartingTime'.
+Invalid column name 'EndingTime'.;
+01/01/0001 00:00:00 ~ PutBookingTimeDetails ~ Invalid column name 'StartingTime'.
+Invalid column name 'EndingTime'.;
+01/01/0001 00:00:00 ~ AddPartInventoryDetails ~ Error converting data type varchar to numeric.;
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_JobCards_Bookings". The conflict occurred in database "Car_Service", table "dbo.Bookings", column 'BookingID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_JobCards_Bookings". The conflict occurred in database "Car_Service", table "dbo.Bookings", column 'BookingID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ The INSERT statement conflicted with the FOREIGN KEY constraint "FK_JobCards_Bookings". The conflict occurred in database "Car_Service", table "dbo.Bookings", column 'BookingID'.
+The statement has been terminated.;
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Booking Insert Query: INSERT INTO Bookings (CustomerID, VehicleID, BookingDate, PreferredDate, Status, BookingStatus, RequestedStartingTime, RequestedEndingTime, ApprovedStartingTime, ApprovedEndingTime) VALUES ('5', '6', '2023-08-01', '2023-08-05', 'A', 'approved', '10:00:00', '13:00:00', '10:00:00', '13:00:00');
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Failed to fetch Booking ID after insert.;
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Booking Insert Query: INSERT INTO Bookings (CustomerID, VehicleID, BookingDate, PreferredDate, Status, BookingStatus, RequestedStartingTime, RequestedEndingTime, ApprovedStartingTime, ApprovedEndingTime) VALUES ('5', '6', '2023-08-01', '2023-08-05', 'A', 'approved', '10:00:00', '13:00:00', '10:00:00', '13:00:00');
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Failed to fetch Booking ID after insert.;
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Booking Insert Query: INSERT INTO Bookings (CustomerID, VehicleID, BookingDate, PreferredDate, Status, BookingStatus, RequestedStartingTime, RequestedEndingTime, ApprovedStartingTime, ApprovedEndingTime) VALUES ('5', '6', '2023-08-01', '2023-08-05', 'A', 'approved', '10:00:00', '13:00:00', '10:00:00', '13:00:00');
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Failed to fetch Booking ID after insert.;
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Booking Insert Query: INSERT INTO Bookings (CustomerID, VehicleID, BookingDate, PreferredDate, Status, BookingStatus, RequestedStartingTime, RequestedEndingTime, ApprovedStartingTime, ApprovedEndingTime) VALUES ('5', '6', '2023-08-01', '2023-08-05', 'A', 'approved', '10:00:00', '13:00:00', '10:00:00', '13:00:00');
+01/01/0001 00:00:00 ~ AddBookingsDetails ~ Failed to fetch Booking ID after insert.;

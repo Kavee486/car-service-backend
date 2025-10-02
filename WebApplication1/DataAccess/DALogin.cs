@@ -24,9 +24,9 @@ namespace WebApplication1.DataAccess
 
 
         private static Dictionary<string, int> otpStorage = new Dictionary<string, int>();
+        private static Dictionary<string, DateTime> otpExpiry = new Dictionary<string, DateTime>();
 
-
-
+        // Login method
         public OtpResponse Login(string contact)
         {
             OtpResponse res = new OtpResponse();
@@ -88,6 +88,7 @@ namespace WebApplication1.DataAccess
                         if (otpStorage.ContainsKey(contact))
                         {
                             otpStorage.Remove(contact);
+
                         }
                     }
                 }
@@ -113,6 +114,48 @@ namespace WebApplication1.DataAccess
                 res.StatusCode = 200;
                 res.Result = "OTP verified successfully. You can now log in.";
                 otpStorage.Remove(contact);  // Remove OTP after successful verification
+
+
+
+
+                // Fetch user details after successful OTP verification
+                string query = @"SELECT * FROM Users WHERE MobileNo = '" + contact + "'";
+                GetLoginModel user = null;
+                using (var DBconnect = new DBconnect())
+                {
+                    using (SqlDataReader reader = DBconnect.ReadTable(query))
+                    {
+                        if (reader.Read())
+                        {
+                            user = new GetLoginModel
+                            {
+                                UserID = Convert.ToInt32(reader["UserID"]),
+                                UserName = reader["UserName"].ToString(),
+                                MobileNo = reader["MobileNo"].ToString(),
+                                RoleID = Convert.ToInt32(reader["RoleID"]),
+                                Email = reader["Email"].ToString()
+                            };
+                        }
+                    }
+                }
+                if (user != null)
+                {
+                    // Store user in session
+                    HttpContext.Current.Session["User"] = user;
+
+                    // Set session timeout (30 minutes)
+                    HttpContext.Current.Session.Timeout = 30;
+
+                    res.StatusCode = 200;
+                    res.Result = "OTP verified successfully.";
+
+             
+                }
+                else
+                {
+                    res.StatusCode = 404;
+                    res.Result = "User not found.";
+                }
             }
             else
             {

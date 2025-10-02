@@ -202,6 +202,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\BookingsController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvoicesController.cs" />
     <Compile Include="Controllers\JobCardItemsController.cs" />
@@ -242,6 +243,7 @@
     <Compile Include="Interfaces\ITest.cs" />
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
+    <Compile Include="Middlewear\AuthenticationMiddleware.cs" />
     <Compile Include="Models\GetBookingsModal.cs" />
     <Compile Include="Models\GetCustomerModal.cs" />
     <Compile Include="Models\GetInvoicesModal.cs" />

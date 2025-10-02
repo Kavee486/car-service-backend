@@ -41,6 +41,14 @@ namespace WebApplication1.Controllers
 
         }
 
+        [HttpGet]
+        public ActionResult GetUserByMobileNo(string MobileNo)
+        {
+            var result = _User.GetUserByMobileNo(MobileNo);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
 
 
     }
