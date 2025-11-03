@@ -11,5 +11,15 @@ namespace WebApplication1.Interfaces
     {
         Response getAllUsers();
         Response AddUserDetails(GetUserModal addUser);
+        Response GetUserByMobileNo(string MobileNo);
+        Response getUsersByRole3();
+        Response getUsersByRole2();
+        Response UpdateUserDetails(GetUserModal updateUser);
+        Response DeactivateUser(GetUserModal updateUser);
+
+
+
+
+
     }
 }

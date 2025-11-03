@@ -12,6 +12,9 @@ namespace WebApplication1.Models
         public string P_StockQty { get; set; }
         public string P_UnitPrice { get; set; }
         public string P_Status { get; set; }
+        public string P_CategoryID { get; set; }
+        public string P_CategoryName { get; set; }
+
 
 
     }

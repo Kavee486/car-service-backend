@@ -85,6 +85,18 @@ namespace WebApplication1.Controllers
 
 
 
+
+
+        //[HttpPost]
+        //public ActionResult PutBookingTimeDetails(GetBookingsModal addBookings)
+        //{
+        //    var result = _Booking.PutBookingTimeDetails(addBookings);
+        //    return Json(result, JsonRequestBehavior.AllowGet);
+
+        //}
+
+
+
         // GET: Bookings
         public ActionResult Index()
         {

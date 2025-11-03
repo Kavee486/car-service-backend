@@ -41,17 +41,51 @@ namespace WebApplication1.Controllers
 
         }
 
+        [HttpGet]
+        public ActionResult GetUserByMobileNo(string MobileNo)
+        {
+            var result = _User.GetUserByMobileNo(MobileNo);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpGet]
+        public ActionResult getUsersByRole3()
+        {
+            var result = _User.getUsersByRole3();  // Call the method from the service layer or business logic
+            return Json(result, JsonRequestBehavior.AllowGet);  // Return the result as a JSON response
+        }
+
+
+
+        [HttpGet]
+        public ActionResult getUsersByRole2()
+        {
+            var result = _User.getUsersByRole2();  // Call the method from the service layer or business logic
+            return Json(result, JsonRequestBehavior.AllowGet);  // Return the result as a JSON response
+        }
+
+
+
+        [HttpPost]
+        public ActionResult UpdateUserDetails(GetUserModal updateUser)
+        {
+            var result = _User.UpdateUserDetails(updateUser);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+
+        [HttpPost]
+        public ActionResult DeactivateUser(GetUserModal updateUser)
+        {
+            var result = _User.DeactivateUser(updateUser);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
 
 
     }
 }
-
-
-
-
-
-
-
-
- 
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Xml.Linq;
+using WebApplication1.Interfaces;
 
 namespace biZTrack.Static
 {
@@ -10,18 +12,31 @@ namespace biZTrack.Static
     {
         public static void WriteToLog(string exceptionMsg, string methodName)
         {
-
-            DateTime now = new DateTime();
-
-            //var filePath = @"C:\inetpub\wwwroot\backend-Test\BizTrack\ExceptionLogs.txt";
-            var filePath = @"C:\Users\Asus\OneDrive\Desktop\CAR\car-service-backend\txt\ExceptionLogs.txt";
-
-            string message = now.ToString("MM/dd/yyyy HH:mm:ss") + " ~ " + methodName + " ~ " + exceptionMsg + ";";
-
-            using (StreamWriter writer = File.AppendText(filePath))
+            try
             {
-                writer.WriteLine(message);
+                DateTime now = DateTime.Now;
+
+                string folderPath = @"C:\Users\LENOVO\Documents\AutoCareLogs";
+                string filePath = Path.Combine(folderPath, "ExceptionLogs.txt");
+
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                string message = $"{now:MM/dd/yyyy HH:mm:ss} ~ {methodName} ~ {exceptionMsg};";
+
+                using (StreamWriter writer = File.AppendText(filePath))
+                {
+                    writer.WriteLine(message);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Last-resort fallback: swallow log errors so signup doesn’t break
+                System.Diagnostics.Debug.WriteLine("Log failed: " + ex.Message);
             }
         }
+
     }
 }

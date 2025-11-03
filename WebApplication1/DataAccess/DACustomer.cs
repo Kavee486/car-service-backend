@@ -21,7 +21,6 @@ namespace WebApplication1.DataAccess
 
             string Query = "SELECT " +
                                 "CustomerID, " +
-                                "UserID," +
                                 "FullName, " +
                                 "Phone," +
                                 "Email, " +
@@ -41,7 +40,6 @@ namespace WebApplication1.DataAccess
                         GetCustomerModal customer = new GetCustomerModal
                         {
                             C_CustomerID = reader["CustomerID"].ToString(),
-                            C_UserID = reader["UserID"].ToString(),
                             C_FullName = reader["FullName"].ToString(),
                             C_Phone = reader["Phone"].ToString(),
                             C_Email = reader["Email"].ToString(),
@@ -70,7 +68,6 @@ namespace WebApplication1.DataAccess
 
             string Query = "SELECT " +
                                 "CustomerID, " +
-                                "UserID," +
                                 "FullName, " +
                                 "Phone," +
                                 "Email, " +
@@ -89,7 +86,6 @@ namespace WebApplication1.DataAccess
                         GetCustomerModal customer = new GetCustomerModal
                         {
                             C_CustomerID = reader["CustomerID"].ToString(),
-                            C_UserID = reader["UserID"].ToString(),
                             C_FullName = reader["FullName"].ToString(),
                             C_Phone = reader["Phone"].ToString(),
                             C_Email = reader["Email"].ToString(),
@@ -111,18 +107,18 @@ namespace WebApplication1.DataAccess
             try
             {
                 string Query = "INSERT INTO Customers " +
-                                          "(UserID," +
-                                           "FullName," +
-                                           "Phone," +
-                                           "Email," +
-                                           "Status," +
-                                           "Address) " +
-                               "VALUES('"  + addCustomer.C_UserID + "'," +
-                                       "'" + addCustomer.C_FullName + "'," +
-                                       "'" + addCustomer.C_Phone + "'," +
-                                       "'" + addCustomer.C_Email + "'," +
-                                       "'A'," +
-                                       "'" + addCustomer.C_Address + "')";
+                   "(FullName," +
+                   " Phone," +
+                   " Email, " +
+                   "Status, " +
+                   "Address) " +
+               "VALUES (" +
+                   "'" + addCustomer.C_FullName + "', " +
+                   "'" + addCustomer.C_Phone + "', " +
+                   "'" + addCustomer.C_Email + "', " +
+                   "'A', " +
+                   "'" + addCustomer.C_Address + "')";
+
 
 
 
@@ -204,5 +200,43 @@ namespace WebApplication1.DataAccess
             }
             return res;
         }
+
+
+
+
+
+        public Response ActivateCustomerDetails(GetCustomerModal addCustomer)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                string updateQuery = @"UPDATE Customers
+                               SET Status = 'A'
+                               WHERE CustomerID = '" + addCustomer.C_CustomerID + @"'";
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Customer activated successfully!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Activation failed!";
+            }
+            return res;
+        }
+
+
+
+
+
+
     }
 }

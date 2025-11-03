@@ -1,429 +1,944 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\car\\car-service-backend\\webapplication1\\dataaccess\\dalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\car\\car-service-backend\\webapplication1\\models\\getloginmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getloginmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\car\\car-service-backend\\webapplication1\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\car\\car-service-backend\\webapplication1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\interfaces\\iinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\iinvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\interfaces\\ijobcarditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ijobcarditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\interfaces\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\car\\car-service-backend\\webapplication1\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\car\\car-service-backend\\webapplication1\\interfaces\\irole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\irole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\car\\car-service-backend\\webapplication1\\dataaccess\\darole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\darole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\dataaccess\\dauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\databaseconnectivity\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\databaseconnectivity\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\datechncians.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\datechncians.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\dataaccess\\dabookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dabookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\technicianscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\technicianscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\dataaccess\\davehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\davehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\itechnicians.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\itechnicians.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\dataaccess\\dainvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dainvoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\gettechniciansmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\gettechniciansmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\controllers\\login1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\login1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\gettimeslotsmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\gettimeslotsmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\interfaces\\ivehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ivehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\datimeslots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\datimeslots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dacustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dacustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\interfaces\\ijobcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ijobcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dapartsinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dapartsinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\models\\getjobcardsmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\timeslotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\timeslotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getusermodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getusermodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|c:\\users\\asus\\onedrive\\desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dajobcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dajobcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getjobcardsmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getjobcardsmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\models\\getinvoicesmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getinvoicesmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\datest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\datest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\interfaces\\ibookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\jobcardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\jobcardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dajobcarditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dajobcarditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\daservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\daservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\ipreviousservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ipreviousservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getpartsinventorymodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getpartsinventorymodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\databaseconnectivity\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\databaseconnectivity\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\ijobcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ijobcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dabookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dabookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\partsinventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\partsinventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getcategorymodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getcategorymodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dacategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dacategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getservicemodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getservicemodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getrolemodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getrolemodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\irole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\irole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\darole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\darole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getloginmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getloginmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\login1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\login1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getpreviousservicesmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getpreviousservicesmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\dapreviousservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\dapreviousservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\previousservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\previousservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\models\\getbookingsmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\getbookingsmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\ibookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\ibookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\dataaccess\\davehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dataaccess\\davehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\webapplication1\\static\\staticclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\static\\staticclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\webapplication1\\interfaces\\itimeslots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0F93C3-747F-4920-B6C6-1FD3E9D314F3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\interfaces\\itimeslots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 38,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RoleController.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T09:41:23.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IRole.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IRole.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IRole.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IRole.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\IRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T05:33:08.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DAUser.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DAUser.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAUser.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DAUser.cs",
-              "RelativeToolTip": "WebApplication1\\DataAccess\\DAUser.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowE8AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T08:52:10.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DARole.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DARole.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DARole.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DARole.cs",
-              "RelativeToolTip": "WebApplication1\\DataAccess\\DARole.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T05:29:32.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetLoginModal.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Models\\GetLoginModal.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetLoginModal.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Models\\GetLoginModal.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\GetLoginModal.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T05:29:18.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ILogin.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\ILogin.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\ILogin.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\ILogin.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\ILogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T05:29:14.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCoAAAAJAAAAAAAAAA==",
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T05:01:49.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DALogin.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DALogin.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DALogin.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DALogin.cs",
-              "RelativeToolTip": "WebApplication1\\DataAccess\\DALogin.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T04:27:32.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DBConnect.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
-              "RelativeToolTip": "WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCMAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T10:26:11.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DABookings.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DABookings.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DABookings.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DABookings.cs",
-              "RelativeToolTip": "WebApplication1\\DataAccess\\DABookings.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAUwEsBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T08:59:37.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DAVehicle.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DAVehicle.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAVehicle.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DAVehicle.cs",
-              "RelativeToolTip": "WebApplication1\\DataAccess\\DAVehicle.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAqwOoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T03:54:00.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICustomer.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\ICustomer.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\ICustomer.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\ICustomer.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\ICustomer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T05:59:41.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Global.asax.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Global.asax.cs",
-              "RelativeToolTip": "WebApplication1\\Global.asax.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:28:43.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DAInvoices.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DAInvoices.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAInvoices.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\DataAccess\\DAInvoices.cs",
-              "RelativeToolTip": "WebApplication1\\DataAccess\\DAInvoices.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAYwBQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T05:25:47.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Login1Controller.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\Login1Controller.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\Login1Controller.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\Login1Controller.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\Login1Controller.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAArwB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T02:24:52.215Z",
+              "WhenOpened": "2025-11-03T09:14:55.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "IVehicle.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IVehicle.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IVehicle.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IVehicle.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\IVehicle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Title": "DAJobCardItems.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAJobCardItems.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAJobCardItems.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAJobCardItems.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DAJobCardItems.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T09:05:15.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "InvoicesController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\InvoicesController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\InvoicesController.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\InvoicesController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\InvoicesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T04:06:15.617Z"
+              "WhenOpened": "2025-10-31T08:16:05.777Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "IJobCards.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IJobCards.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IJobCards.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IJobCards.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\IJobCards.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\TestController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T10:39:16.686Z"
+              "WhenOpened": "2025-10-31T06:11:12.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GetJobCardsModal.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Models\\GetJobCardsModal.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetJobCardsModal.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Models\\GetJobCardsModal.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\GetJobCardsModal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TechniciansController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\TechniciansController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TechniciansController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\TechniciansController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\TechniciansController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T02:25:18.125Z"
+              "WhenOpened": "2025-10-31T05:54:04.357Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IJobCardItems.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IJobCardItems.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IJobCardItems.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IJobCardItems.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\IJobCardItems.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DATechncians.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DATechncians.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DATechncians.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DATechncians.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DATechncians.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T02:32:32.85Z",
+              "WhenOpened": "2025-10-31T05:53:26.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IInvoices.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IInvoices.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IInvoices.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IInvoices.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\IInvoices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Title": "ITechnicians.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ITechnicians.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\ITechnicians.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ITechnicians.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\ITechnicians.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T02:59:38.462Z",
+              "WhenOpened": "2025-10-31T05:52:51.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GetInvoicesModal.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Models\\GetInvoicesModal.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetInvoicesModal.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Models\\GetInvoicesModal.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\GetInvoicesModal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "GetTechniciansModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetTechniciansModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetTechniciansModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetTechniciansModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetTechniciansModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T02:23:24.661Z"
+              "WhenOpened": "2025-10-31T05:52:29.601Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IBookings.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IBookings.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IBookings.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Interfaces\\IBookings.cs",
-              "RelativeToolTip": "WebApplication1\\Interfaces\\IBookings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T08:49:34.805Z"
+              "DocumentIndex": 26,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication1\\Web.config",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Web.config",
+              "RelativeToolTip": "WebApplication1\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-31T04:07:40.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\packages.config",
+              "RelativeDocumentMoniker": "WebApplication1\\packages.config",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\packages.config",
+              "RelativeToolTip": "WebApplication1\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-31T04:07:38.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IJobCards.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IJobCards.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IJobCards.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IJobCards.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\IJobCards.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:20:20.995Z"
+              "WhenOpened": "2025-10-30T03:01:26.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetJobCardsModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetJobCardsModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetJobCardsModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetJobCardsModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetJobCardsModal.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:57:04.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DAJobCards.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAJobCards.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAJobCards.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAJobCards.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DAJobCards.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAgwEABAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:27:39.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JobCardsController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\JobCardsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\JobCardsController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\JobCardsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\JobCardsController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:26:57.742Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "StaticClass.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Static\\StaticClass.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Static\\StaticClass.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\CAR\\car-service-backend\\WebApplication1\\Static\\StaticClass.cs",
-              "RelativeToolTip": "WebApplication1\\Static\\StaticClass.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "GetPartsInventoryModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetPartsInventoryModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetPartsInventoryModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetPartsInventoryModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetPartsInventoryModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T04:01:32.221Z"
+              "WhenOpened": "2025-10-29T05:54:17.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GetCategoryModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetCategoryModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetCategoryModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetCategoryModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetCategoryModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:52:32.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DAPartsInventory.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAPartsInventory.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAPartsInventory.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAPartsInventory.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DAPartsInventory.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAswNgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:14:45.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DACategory.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DACategory.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DACategory.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DACategory.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DACategory.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAwwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:50:15.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ICategory.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ICategory.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\ICategory.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ICategory.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\ICategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:49:52.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IService.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\IService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:04:35.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DATest.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DATest.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DATest.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DATest.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DATest.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwCoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:03:51.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:03:20.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GetServiceModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetServiceModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetServiceModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetServiceModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetServiceModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:03:15.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:14:32.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "GetRoleModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetRoleModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetRoleModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetRoleModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetRoleModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T14:52:15.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IRole.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IRole.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IRole.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IRole.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\IRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T14:51:51.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ILogin.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ILogin.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\ILogin.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ILogin.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\ILogin.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T14:49:54.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "PreviousServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\PreviousServicesController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\PreviousServicesController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\PreviousServicesController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\PreviousServicesController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T06:30:56.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "DAPreviousServices.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAPreviousServices.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAPreviousServices.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAPreviousServices.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DAPreviousServices.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAswKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T06:29:43.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IPreviousServices.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IPreviousServices.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IPreviousServices.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IPreviousServices.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\IPreviousServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T06:28:53.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "GetPreviousServicesModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetPreviousServicesModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetPreviousServicesModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetPreviousServicesModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetPreviousServicesModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T06:28:14.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PartsInventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\PartsInventoryController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\PartsInventoryController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\PartsInventoryController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\PartsInventoryController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T05:37:14.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DAService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAService.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DAService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T03:52:56.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IBookings.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IBookings.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IBookings.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IBookings.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\IBookings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:14:37.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DACustomer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DACustomer.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DACustomer.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DACustomer.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DACustomer.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAwwLoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:06:54.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:04:55.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "GetBookingsModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetBookingsModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetBookingsModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetBookingsModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetBookingsModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T08:49:16.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DABookings.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DABookings.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DABookings.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DABookings.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DABookings.cs",
+              "ViewState": "AgIAABgDAAAAAAAAAAAYwDMDAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T08:40:15.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T08:46:19.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DAUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAUser.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAUser.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DAUser.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAowKkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T08:19:15.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetUserModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetUserModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetUserModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetUserModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetUserModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T08:13:16.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IUser.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\IUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\IUser.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\IUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T08:12:53.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "GetLoginModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetLoginModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetLoginModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetLoginModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetLoginModal.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAmwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:29:35.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "DAVehicle.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAVehicle.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DAVehicle.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DAVehicle.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DAVehicle.cs",
+              "ViewState": "AgIAABMBAAAAAAAAAAAswCABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:18:31.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\VehicleController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\VehicleController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\VehicleController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\VehicleController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:17:45.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UnityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\App_Start\\UnityConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\App_Start\\UnityConfig.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\App_Start\\UnityConfig.cs",
+              "RelativeToolTip": "WebApplication1\\App_Start\\UnityConfig.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:07:54.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:15:29.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DARole.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DARole.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DARole.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DARole.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DARole.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:15:20.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DALogin.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DALogin.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DALogin.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DALogin.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DALogin.cs",
+              "ViewState": "AgIAABUCAAAAAAAAAAAUwCoCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:13:16.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:13:01.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Login1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\Login1Controller.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\Login1Controller.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\Login1Controller.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\Login1Controller.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:13:06.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Global.asax.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Global.asax.cs",
+              "RelativeToolTip": "WebApplication1\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T16:00:24.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DBConnect.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
+              "RelativeToolTip": "WebApplication1\\DataBaseConnectivity\\DBConnect.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T11:37:38.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetTimeslotsModal.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetTimeslotsModal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GetTimeslotsModal.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Models\\GetTimeslotsModal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GetTimeslotsModal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T11:41:09.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ITimeslots.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ITimeslots.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Interfaces\\ITimeslots.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Interfaces\\ITimeslots.cs",
+              "RelativeToolTip": "WebApplication1\\Interfaces\\ITimeslots.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T11:40:39.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DATimeslots.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DATimeslots.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataAccess\\DATimeslots.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\DataAccess\\DATimeslots.cs",
+              "RelativeToolTip": "WebApplication1\\DataAccess\\DATimeslots.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAwwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T11:40:08.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TimeslotsController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\TimeslotsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TimeslotsController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\TimeslotsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\TimeslotsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T11:38:35.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\newcar\\car-service-backend\\WebApplication1\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T11:38:33.619Z"
             }
           ]
         }

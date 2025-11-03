@@ -13,7 +13,6 @@ namespace WebApplication1.Models
         public string S_Description { get; set; }
         public string S_BaseCharge { get; set; }
         public string S_Status { get; set; }
-
-
+        public string S_Time { get;  set; }
     }
 }

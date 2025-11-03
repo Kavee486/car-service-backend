@@ -65,6 +65,27 @@ namespace WebApplication1.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
+        [HttpPost]
+        public ActionResult UpdateBookingServices(GetJobCardsModal addJobCards)
+        {
+            var result = _JobCards.UpdateBookingServices(addJobCards);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public ActionResult AddBookingParts(GetJobCardsModal addJobCards)
+        {
+            var response = _JobCards.AddBookingParts(addJobCards);
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet]
+        public ActionResult GetBookingPartsByBookingID(string BookingID)
+        {
+            var result = _JobCards.GetBookingPartsByBookingID(BookingID);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+
 
 
 

@@ -14,6 +14,11 @@ namespace WebApplication1.Interfaces
         Response GetJobCardsByJobCardID(string JobCardID);
         Response PutJobCardsDetails(GetJobCardsModal addJobCards);
         Response DeleteJobCardsDetails(GetJobCardsModal addJobCards);
+        Response UpdateBookingServices(GetJobCardsModal addJobCards);
+
+        Response AddBookingParts(GetJobCardsModal addJobCards);
+        Response GetBookingPartsByBookingID(string BookingID);
+
 
     }
 }

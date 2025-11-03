@@ -63,7 +63,13 @@ namespace WebApplication1.Controllers
 
 
 
+        [HttpPost]
+        public ActionResult ActivateCustomerDetails(GetCustomerModal addCustomer)
+        {
+            var result = _customer.ActivateCustomerDetails(addCustomer);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
+        }
 
 
 

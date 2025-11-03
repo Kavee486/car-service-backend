@@ -65,6 +65,22 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpGet]
+        public ActionResult GetAllInvoicesWithJobCards()
+        {
+            var result = _Invoices.GetAllInvoicesWithJobCards();
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpPost]
+        public ActionResult UpdateInvoiceDetails(GetInvoicesModal updateInvoice)
+        {
+            var result = _Invoices.UpdateInvoiceDetails(updateInvoice);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
 
 
         // GET: Invoices

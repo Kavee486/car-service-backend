@@ -18,26 +18,32 @@ namespace WebApplication1.DataAccess
             DBconnect DBconnect = new DBconnect();
             try
             {
+                // SQL Insert query for adding invoice details
                 string Query = "INSERT INTO Invoices " +
-                                          "(JobCardID," +
-                                           "InvoiceDate," +
-                                           "TotalAmount," +
-                                           "Status," +
-                                           "PaymentStatus) " +
-                               "VALUES('" + addInvoice.I_JobCardID + "'," +
-                                       "'" + addInvoice.I_InvoiceDate + "'," +
+                               "(InvoiceID, " +
+                               "BookingID, " +
+                               "TotalAmount, " +
+                               "InvoiceDate, " +
+                               "PaymentStatus, " +
+                               "JobCardID) " + // Assuming JobCardID is part of the invoice
+                               "VALUES('" + addInvoice.I_InvoiceID + "'," +
+                                       "'" + addInvoice.J_BookingID + "'," +
                                        "'" + addInvoice.I_TotalAmount + "'," +
-                                       "'A'," +
-                                       "'" + addInvoice.I_PaymentStatus + "')";
-
-
+                                       "'" + addInvoice.I_InvoiceDate + "'," +
+                                       "'" + addInvoice.I_PaymentStatus + "'," +
+                                       "'" + addInvoice.JobCardID + "')"; // Add JobCardID to relate with JobCards table
 
                 using (var dbConnect = new DBconnect())
                 {
-                    if (dbConnect.AddEditDel(Query))
+                    if (dbConnect.AddEditDel(Query)) // Call AddEditDel method for inserting the data
                     {
                         res.StatusCode = 200;
                         res.Result = "Success!!";
+                    }
+                    else
+                    {
+                        res.StatusCode = 500;
+                        res.Result = "Failed to insert invoice details!!";
                     }
                 }
             }
@@ -45,7 +51,7 @@ namespace WebApplication1.DataAccess
             {
                 LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
                 res.StatusCode = 500;
-                res.Result = "Failed!!";
+                res.Result = "An error occurred while adding invoice details!!";
             }
             return res;
         }
@@ -122,6 +128,61 @@ namespace WebApplication1.DataAccess
 
         }
 
+        public Response GetAllInvoicesWithJobCards()
+        {
+            Response res = new Response();
+            List<GetInvoicesModal> InvoicesList = new List<GetInvoicesModal>();
+
+            // Updated Query to JOIN the Invoices and JobCards tables
+            string Query = "SELECT " +
+                            "Invoices.InvoiceID, " +
+                            "JobCards.BookingID, " +
+                            "JobCards.JobCardStatus, " +
+                            "Invoices.TotalAmount, " +
+                            "Invoices.InvoiceDate, " +
+                            "Invoices.PaymentStatus " +
+                            "FROM " +
+                            "Invoices " +
+                            "INNER JOIN JobCards ON Invoices.JobCardID = JobCards.JobCardID"; // JOIN condition
+
+            using (var DBconnect = new DBconnect())
+            {
+                using (SqlDataReader reader = DBconnect.ReadTable(Query))
+                {
+                    while (reader.Read())
+                    {
+                        GetInvoicesModal Invoice = new GetInvoicesModal
+                        {
+                            I_InvoiceID = reader["InvoiceID"].ToString(),
+                            J_BookingID = reader["BookingID"].ToString(),
+                            J_JobCardStatus = reader["JobCardStatus"].ToString(),
+                            I_TotalAmount = reader["TotalAmount"].ToString(),
+                            I_InvoiceDate = reader["InvoiceDate"].ToString(),
+                            I_PaymentStatus = reader["PaymentStatus"].ToString()
+                        };
+
+                        InvoicesList.Add(Invoice);
+                    }
+                }
+            }
+            res.StatusCode = 200;
+            res.ResultSet = InvoicesList;
+            return res;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public Response GetInvoicesByInvoiceID(string InvoiceID)
         {
 
@@ -188,6 +249,42 @@ namespace WebApplication1.DataAccess
             catch (Exception ex)
             {
                 LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+                res.StatusCode = 500;
+                res.Result = "Failed!!";
+            }
+            return res;
+        }
+
+        public Response UpdateInvoiceDetails(GetInvoicesModal updateInvoice)
+        {
+            Response res = new Response();
+            DBconnect DBconnect = new DBconnect();
+            try
+            {
+                // Construct the UPDATE query
+                string updateQuery = @"UPDATE Invoices
+                               SET PaymentStatus = '" + updateInvoice.I_PaymentStatus + @"',
+                                   InvoiceDate = '" + updateInvoice.I_InvoiceDate + @"',
+                                   TotalAmount = '" + updateInvoice.I_TotalAmount + @"'
+                               WHERE InvoiceID = '" + updateInvoice.I_InvoiceID + @"'";  // Update condition on InvoiceID
+
+                using (var dbConnect = new DBconnect())
+                {
+                    if (dbConnect.AddEditDel(updateQuery))  // Assuming AddEditDel is responsible for executing the query
+                    {
+                        res.StatusCode = 200;
+                        res.Result = "Success!!";  // Return success response
+                    }
+                    else
+                    {
+                        res.StatusCode = 500;
+                        res.Result = "Failed to update invoice details.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);  // Log errors
                 res.StatusCode = 500;
                 res.Result = "Failed!!";
             }

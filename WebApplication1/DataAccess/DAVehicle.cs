@@ -14,36 +14,79 @@ namespace WebApplication1.DataAccess
     {
 
 
+        //public Response AddVehicalDetails(GetVehicleModal addVehicle)
+        //{
+        //    Response res = new Response();
+        //    DBconnect DBconnect = new DBconnect();
+        //    try
+        //    {
+        //        string Query = "INSERT INTO vehicles " +
+        //                                  "(CustomerID," +
+        //                                   "PlateNumber," +
+        //                                   "make," +
+        //                                   "model," +
+        //                                   "Year," +
+        //                                   "Status," +
+        //                                   "VIN) " +
+        //                       "VALUES('" + addVehicle.V_CustomerID + "'," +
+        //                               "'" + addVehicle.V_PlateNumber + "'," +
+        //                               "'" + addVehicle.V_Make + "'," +
+        //                               "'" + addVehicle.V_Model + "'," +
+        //                               "'" + addVehicle.V_Year + "'," +
+        //                               "'A'," +
+        //                               "'" + addVehicle.V_VIN + "')";
+
+
+
+        //        using (var dbConnect = new DBconnect())
+        //        {
+        //            if (dbConnect.AddEditDel(Query))
+        //            {
+        //                res.StatusCode = 200;
+        //                res.Result = "Success!!";
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        LogHandler.WriteToLog(ex.Message, System.Reflection.MethodBase.GetCurrentMethod().Name);
+        //        res.StatusCode = 500;
+        //        res.Result = "Failed!!";
+        //    }
+        //    return res;
+        //}
         public Response AddVehicalDetails(GetVehicleModal addVehicle)
         {
             Response res = new Response();
-            DBconnect DBconnect = new DBconnect();
+
             try
             {
-                string Query = "INSERT INTO vehicles " +
-                                          "(CustomerID," +
-                                           "PlateNumber," +
-                                           "make," +
-                                           "model," +
-                                           "Year," +
-                                           "Status," +
-                                           "VIN) " +
-                               "VALUES('" + addVehicle.V_CustomerID + "'," +
-                                       "'" + addVehicle.V_PlateNumber + "'," +
-                                       "'" + addVehicle.V_Make + "'," +
-                                       "'" + addVehicle.V_Model + "'," +
-                                       "'" + addVehicle.V_Year + "'," +
-                                       "'A'," +
-                                       "'" + addVehicle.V_VIN + "')";
-
-
+                string query = "INSERT INTO vehicles " +
+                               "(CustomerID, PlateNumber, make, model, Year, Status, VIN) " +
+                               "OUTPUT INSERTED.VehicleID " +  // return the newly created ID
+                               "VALUES (" +
+                               "'" + addVehicle.V_CustomerID + "', " +
+                               "'" + addVehicle.V_PlateNumber + "', " +
+                               "'" + addVehicle.V_Make + "', " +
+                               "'" + addVehicle.V_Model + "', " +
+                               "'" + addVehicle.V_Year + "', " +
+                               "'A', " +
+                               "'" + addVehicle.V_VIN + "')";
 
                 using (var dbConnect = new DBconnect())
                 {
-                    if (dbConnect.AddEditDel(Query))
+                    object result = dbConnect.ExecuteScalar(query);
+
+                    if (result != null)
                     {
                         res.StatusCode = 200;
                         res.Result = "Success!!";
+                        res.ResultSet = new { VehicleID = Convert.ToInt32(result) }; // return the inserted ID
+                    }
+                    else
+                    {
+                        res.StatusCode = 400;
+                        res.Result = "Failed to insert record!";
                     }
                 }
             }
@@ -53,24 +96,30 @@ namespace WebApplication1.DataAccess
                 res.StatusCode = 500;
                 res.Result = "Failed!!";
             }
+
             return res;
         }
+
+
 
         public Response getAllVehicles()
         {
             Response res = new Response();
             List<GetVehicleModal> VehicleList = new List<GetVehicleModal>();
 
+            // Modify the query to join the vehicles table with the customers table to fetch customer names
             string Query = "SELECT " +
-                                "VehicleID, " +
-                                "CustomerID," +
-                                "PlateNumber, " +
-                                "make, " +
-                                "model, " +
-                                "Year, " +
-                                "VIN " +
+                            "v.VehicleID, " +
+                            "v.CustomerID, " +
+                            "v.PlateNumber, " +
+                            "v.make, " +
+                            "v.model, " +
+                            "v.Year, " +
+                            "v.VIN, " +
+                            "c.FullName AS CustomerName " +  // Fetch FullName from Customers table
                             "FROM " +
-                                "vehicles ";
+                            "vehicles v " +
+                            "JOIN Customers c ON v.CustomerID = c.CustomerID";  // Join with Customers table
 
             using (var DBconnect = new DBconnect())
             {
@@ -78,9 +127,7 @@ namespace WebApplication1.DataAccess
                 {
                     while (reader.Read())
                     {
-
                         GetVehicleModal Vehicle = new GetVehicleModal();
-
 
                         Vehicle.V_VehicleID = reader["VehicleID"].ToString();
                         Vehicle.V_CustomerID = reader["CustomerID"].ToString();
@@ -89,14 +136,17 @@ namespace WebApplication1.DataAccess
                         Vehicle.V_Model = reader["model"].ToString();
                         Vehicle.V_Year = reader["Year"].ToString();
                         Vehicle.V_VIN = reader["VIN"].ToString();
+                        Vehicle.V_CustomerName = reader["CustomerName"].ToString();  // Add the customer name to the Vehicle modal
 
                         VehicleList.Add(Vehicle);
                     }
                 }
             }
+
             res.StatusCode = 200;
             res.ResultSet = VehicleList;
             return res;
+
         }
 
         public Response GetVehicleByCustomerID(string CustomerID)

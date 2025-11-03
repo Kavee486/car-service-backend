@@ -22,16 +22,17 @@ namespace WebApplication1.DataAccess
             Response res = new Response();
             List<GetServiceModal> ServiceList = new List<GetServiceModal>();
 
+            // Modified query to include the 'Time' column
             string Query = "SELECT " +
                                 "ServiceID, " +
-                                "ServiceName," +
+                                "ServiceName, " +
                                 "Description, " +
-                                "BaseCharge " +
-
+                                "BaseCharge, " +
+                                "Time " + // Added the Time column
                             "FROM " +
                                 "services " +
                             "WHERE " +
-                                "Status = 'A' ";
+                                "Status = 'A'";
 
             using (var DBconnect = new DBconnect())
             {
@@ -39,20 +40,20 @@ namespace WebApplication1.DataAccess
                 {
                     while (reader.Read())
                     {
-
                         GetServiceModal service = new GetServiceModal
                         {
                             S_ServiceID = reader["ServiceID"].ToString(),
                             S_ServiceName = reader["ServiceName"].ToString(),
                             S_Description = reader["Description"].ToString(),
-                            S_BaseCharge = reader["BaseCharge"].ToString()
+                            S_BaseCharge = reader["BaseCharge"].ToString(),
+                            S_Time = reader["Time"].ToString() // Populate Time from the database
                         };
-
 
                         ServiceList.Add(service);
                     }
                 }
             }
+
             res.StatusCode = 200;
             res.ResultSet = ServiceList;
             return res;
@@ -104,12 +105,13 @@ namespace WebApplication1.DataAccess
             DBconnect DBconnect = new DBconnect();
             try
             {
-                string updateQuery = @" UPDATE services
-                                        SET ServiceName = '" + addService.S_ServiceName + @"',
-                                            Description = '" + addService.S_Description + @"',
-                                            BaseCharge = '" + addService.S_BaseCharge + @"'
-                                        WHERE ServiceID = '" + addService.S_ServiceID + @"'";
-             
+                // Modified query to include Time column
+                string updateQuery = @"UPDATE services
+                               SET ServiceName = '" + addService.S_ServiceName + @"',
+                                   Description = '" + addService.S_Description + @"',
+                                   BaseCharge = '" + addService.S_BaseCharge + @"',
+                                   Time = '" + addService.S_Time + @"'  -- Added the Time field
+                               WHERE ServiceID = '" + addService.S_ServiceID + @"'";
 
                 using (var dbConnect = new DBconnect())
                 {
@@ -128,6 +130,14 @@ namespace WebApplication1.DataAccess
             }
             return res;
         }
+
+
+
+
+
+
+
+
         public Response DeleteServiceDetails(GetServiceModal addService)
         {
             Response res = new Response();
@@ -163,17 +173,18 @@ namespace WebApplication1.DataAccess
             DBconnect DBconnect = new DBconnect();
             try
             {
+                // Updated the INSERT query to include the Time field
                 string Query = "INSERT INTO services " +
-                                          "(ServiceName," +
-                                           "Description," +
-                                           "Status," +
-                                           "BaseCharge) " +
-                               "VALUES('" + addService.S_ServiceName + "'," +
-                                       "'" + addService.S_Description + "'," +
-                                       "'A'," +
-                                       "'" + addService.S_BaseCharge + "')";
-
-
+                               "(ServiceName, " +
+                                "Description, " +
+                                "Status, " +
+                                "BaseCharge, " +
+                                "Time) " + // Added Time column
+                               "VALUES('" + addService.S_ServiceName + "', " +
+                                        "'" + addService.S_Description + "', " +
+                                        "'A', " +
+                                        "'" + addService.S_BaseCharge + "', " +
+                                        "'" + addService.S_Time + "')"; // Added the Time value
 
                 using (var dbConnect = new DBconnect())
                 {

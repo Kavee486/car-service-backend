@@ -13,6 +13,8 @@ namespace WebApplication1.Models
         public string I_TotalAmount { get; set; }
         public string I_PaymentStatus { get; set; }
         public string I_Status { get; set; }
-
+        public string J_BookingID { get;  set; }
+        public string J_JobCardStatus { get;  set; }
+        public string JobCardID { get;  set; }
     }
 }

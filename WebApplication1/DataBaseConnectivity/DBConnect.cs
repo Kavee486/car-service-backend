@@ -18,8 +18,9 @@ namespace WebApplication1.Database_Layer
             //  "Password=admin@123; MultipleActiveResultSets=true;Max Pool Size=600;");
 
 
-            _connectionString = "Data Source=localhost\\SQLEXPRESS; Initial Catalog=Car_Service; Integrated Security=True; MultipleActiveResultSets=True;";
-
+            // _connectionString = "Data Source=localhost\\SQLEXPRESS; Initial Catalog=Car_DB; Integrated Security=True; MultipleActiveResultSets=True;";
+            // _connectionString = "Data Source=DESKTOP-M4RH8HC\\SQLEXPRESS; Initial Catalog=Car_DB; Integrated Security=True; MultipleActiveResultSets=True;";
+            _connectionString = "Data Source=localhost\\SQLEXPRESS; Initial Catalog=car; Integrated Security=True; MultipleActiveResultSets=True;";
         }
 
         public SqlConnection GetOpenConnection()

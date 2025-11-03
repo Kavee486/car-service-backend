@@ -22,6 +22,7 @@ namespace WebApplication1.Controllers
         // GET: Test
         public ActionResult Index()
         {
+            Session.Clear();
             return View();
         }
 
